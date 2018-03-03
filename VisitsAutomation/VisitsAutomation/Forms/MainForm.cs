@@ -101,7 +101,7 @@ namespace VisitsAutomation.Forms
             int index = listBox_Subjects.SelectedIndex;
 
            var selectedSchedule = _data.Schedules
-                .Where(t => t.GroupId == selectedGroupId && Comparator.Equal(t.Date, selectedDate))
+                .Where(t => t.GroupId == selectedGroupId && t.Day== selectedDate.DayOfWeek)
                 .OrderBy(t => t.Number)
                 .ToList()[index];
 
@@ -111,12 +111,31 @@ namespace VisitsAutomation.Forms
 
             foreach (var student in studentsList)
             {
-                var absent = _data.Absents
+                var absents = _data.Absents
                     .Where(t => t.ScheduleId == selectedSchedule.Id
-                                && t.StudentId == student.Id)
-                    .First();
-                flowLayoutPanel_Absents.Controls.Add(ElementMaker.CreateContainerLine(student.FullName, absent.Cause,chechBoxs));
-                studentAbsents.Add(student,absent);
+                                && t.StudentId == student.Id
+                                && Comparator.Equal(t.Date,selectedDate));
+                if (absents.Count() > 0)
+                {
+                    flowLayoutPanel_Absents.Controls.Add(ElementMaker
+                        .CreateContainerLine(student.FullName, absents.First().Cause, chechBoxs));
+                    studentAbsents.Add(student, absents.First());
+                }
+                else
+                {
+                    flowLayoutPanel_Absents.Controls.Add(ElementMaker
+                        .CreateContainerLine(student.FullName, Absent.PRESENT, chechBoxs));
+                    Absent absent = new Absent {
+                        Id = _data.Absents.Count,
+                        Cause = Absent.PRESENT,
+                        Date = selectedDate,
+                        ScheduleId = selectedSchedule.Id,
+                        StudentId = student.Id
+                    };
+                    studentAbsents.Add(student, absent);
+                    _data.Absents.Add(absent);
+                }
+                _data.SaveChanges(DataContext.ABSENT);
             }
         }
 
@@ -135,14 +154,15 @@ namespace VisitsAutomation.Forms
         {
             AddGroupForm addGroupForm = new AddGroupForm(_data);
             addGroupForm.ShowDialog();
+            DayOfWeek day = dateTimePicker_ScheduleDate.Value.DayOfWeek;
             
-
             ElementMaker.MakeGroupsTreeView(_data, treeView_Groups, comboBox_Faculty);
         }
 
-        private void tabPage_Schedule_Click(object sender, EventArgs e)
+        private void lessonToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            AddLessonForm addLessonForm = new AddLessonForm(_data);
+            addLessonForm.ShowDialog();
         }
     }
 }

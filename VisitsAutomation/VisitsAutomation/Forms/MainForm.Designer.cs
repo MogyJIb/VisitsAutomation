@@ -121,27 +121,28 @@
             // groupToolStripMenuItem
             // 
             this.groupToolStripMenuItem.Name = "groupToolStripMenuItem";
-            this.groupToolStripMenuItem.Size = new System.Drawing.Size(135, 26);
+            this.groupToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.groupToolStripMenuItem.Text = "Group";
             this.groupToolStripMenuItem.Click += new System.EventHandler(this.groupToolStripMenuItem_Click);
             // 
             // studentToolStripMenuItem
             // 
             this.studentToolStripMenuItem.Name = "studentToolStripMenuItem";
-            this.studentToolStripMenuItem.Size = new System.Drawing.Size(135, 26);
+            this.studentToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.studentToolStripMenuItem.Text = "Student";
             // 
             // subjectToolStripMenuItem
             // 
             this.subjectToolStripMenuItem.Name = "subjectToolStripMenuItem";
-            this.subjectToolStripMenuItem.Size = new System.Drawing.Size(135, 26);
+            this.subjectToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.subjectToolStripMenuItem.Text = "Subject";
             // 
             // lessonToolStripMenuItem
             // 
             this.lessonToolStripMenuItem.Name = "lessonToolStripMenuItem";
-            this.lessonToolStripMenuItem.Size = new System.Drawing.Size(135, 26);
+            this.lessonToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.lessonToolStripMenuItem.Text = "Lesson";
+            this.lessonToolStripMenuItem.Click += new System.EventHandler(this.lessonToolStripMenuItem_Click);
             // 
             // referenceBooksToolStripMenuItem
             // 
@@ -157,25 +158,25 @@
             // absentsToolStripMenuItem
             // 
             this.absentsToolStripMenuItem.Name = "absentsToolStripMenuItem";
-            this.absentsToolStripMenuItem.Size = new System.Drawing.Size(170, 26);
+            this.absentsToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.absentsToolStripMenuItem.Text = "Absents";
             // 
             // studensToolStripMenuItem
             // 
             this.studensToolStripMenuItem.Name = "studensToolStripMenuItem";
-            this.studensToolStripMenuItem.Size = new System.Drawing.Size(170, 26);
+            this.studensToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.studensToolStripMenuItem.Text = "Studens";
             // 
             // groupsToolStripMenuItem
             // 
             this.groupsToolStripMenuItem.Name = "groupsToolStripMenuItem";
-            this.groupsToolStripMenuItem.Size = new System.Drawing.Size(170, 26);
+            this.groupsToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.groupsToolStripMenuItem.Text = "Groups";
             // 
             // departmentsToolStripMenuItem
             // 
             this.departmentsToolStripMenuItem.Name = "departmentsToolStripMenuItem";
-            this.departmentsToolStripMenuItem.Size = new System.Drawing.Size(170, 26);
+            this.departmentsToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.departmentsToolStripMenuItem.Text = "Departments";
             // 
             // helpToolStripMenuItem
@@ -270,7 +271,6 @@
             this.tabPage_Schedule.TabIndex = 1;
             this.tabPage_Schedule.Text = "Schedule";
             this.tabPage_Schedule.UseVisualStyleBackColor = true;
-            this.tabPage_Schedule.Click += new System.EventHandler(this.tabPage_Schedule_Click);
             // 
             // splitContainer1
             // 
@@ -334,7 +334,6 @@
             // comboBox_Faculty
             // 
             this.comboBox_Faculty.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_Faculty.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox_Faculty.FormattingEnabled = true;
             this.comboBox_Faculty.Location = new System.Drawing.Point(57, 58);
             this.comboBox_Faculty.Name = "comboBox_Faculty";
@@ -345,7 +344,7 @@
             // comboBox_Group
             // 
             this.comboBox_Group.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_Group.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.comboBox_Group.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.comboBox_Group.FormattingEnabled = true;
             this.comboBox_Group.Location = new System.Drawing.Point(57, 138);
             this.comboBox_Group.Name = "comboBox_Group";
@@ -356,7 +355,6 @@
             // comboBox_Department
             // 
             this.comboBox_Department.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_Department.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox_Department.FormattingEnabled = true;
             this.comboBox_Department.Location = new System.Drawing.Point(57, 98);
             this.comboBox_Department.Name = "comboBox_Department";

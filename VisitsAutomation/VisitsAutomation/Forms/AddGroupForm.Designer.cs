@@ -36,12 +36,18 @@
             this.textBox_Faculty = new System.Windows.Forms.TextBox();
             this.button_Cancel = new System.Windows.Forms.Button();
             this.button_Add = new System.Windows.Forms.Button();
+            this.dataGridView_Groups = new System.Windows.Forms.DataGridView();
+            this.button_Delete = new System.Windows.Forms.Button();
+            this.Column_Group = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_Department = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_Faculty = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Groups)).BeginInit();
             this.SuspendLayout();
             // 
             // label_Group
             // 
             this.label_Group.AutoSize = true;
-            this.label_Group.Location = new System.Drawing.Point(50, 32);
+            this.label_Group.Location = new System.Drawing.Point(485, 23);
             this.label_Group.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Group.Name = "label_Group";
             this.label_Group.Size = new System.Drawing.Size(54, 18);
@@ -51,7 +57,7 @@
             // label_Department
             // 
             this.label_Department.AutoSize = true;
-            this.label_Department.Location = new System.Drawing.Point(50, 90);
+            this.label_Department.Location = new System.Drawing.Point(485, 81);
             this.label_Department.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Department.Name = "label_Department";
             this.label_Department.Size = new System.Drawing.Size(90, 18);
@@ -61,7 +67,7 @@
             // label_Faculty
             // 
             this.label_Faculty.AutoSize = true;
-            this.label_Faculty.Location = new System.Drawing.Point(50, 148);
+            this.label_Faculty.Location = new System.Drawing.Point(485, 139);
             this.label_Faculty.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Faculty.Name = "label_Faculty";
             this.label_Faculty.Size = new System.Drawing.Size(58, 18);
@@ -71,35 +77,35 @@
             // 
             // textBox_Group
             // 
-            this.textBox_Group.Location = new System.Drawing.Point(50, 52);
+            this.textBox_Group.Location = new System.Drawing.Point(485, 43);
             this.textBox_Group.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.textBox_Group.Name = "textBox_Group";
-            this.textBox_Group.Size = new System.Drawing.Size(264, 26);
+            this.textBox_Group.Size = new System.Drawing.Size(212, 26);
             this.textBox_Group.TabIndex = 3;
             // 
             // textBox_Department
             // 
-            this.textBox_Department.Location = new System.Drawing.Point(50, 110);
+            this.textBox_Department.Location = new System.Drawing.Point(485, 101);
             this.textBox_Department.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.textBox_Department.Name = "textBox_Department";
-            this.textBox_Department.Size = new System.Drawing.Size(264, 26);
+            this.textBox_Department.Size = new System.Drawing.Size(212, 26);
             this.textBox_Department.TabIndex = 4;
             // 
             // textBox_Faculty
             // 
-            this.textBox_Faculty.Location = new System.Drawing.Point(50, 168);
+            this.textBox_Faculty.Location = new System.Drawing.Point(485, 159);
             this.textBox_Faculty.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.textBox_Faculty.Name = "textBox_Faculty";
-            this.textBox_Faculty.Size = new System.Drawing.Size(264, 26);
+            this.textBox_Faculty.Size = new System.Drawing.Size(212, 26);
             this.textBox_Faculty.TabIndex = 5;
             // 
             // button_Cancel
             // 
             this.button_Cancel.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button_Cancel.Location = new System.Drawing.Point(183, 215);
+            this.button_Cancel.Location = new System.Drawing.Point(611, 247);
             this.button_Cancel.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.button_Cancel.Name = "button_Cancel";
-            this.button_Cancel.Size = new System.Drawing.Size(108, 26);
+            this.button_Cancel.Size = new System.Drawing.Size(86, 26);
             this.button_Cancel.TabIndex = 6;
             this.button_Cancel.Text = "Cancel";
             this.button_Cancel.UseVisualStyleBackColor = false;
@@ -111,21 +117,73 @@
             this.button_Add.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.button_Add.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.MenuHighlight;
             this.button_Add.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button_Add.Location = new System.Drawing.Point(66, 215);
+            this.button_Add.Location = new System.Drawing.Point(500, 198);
             this.button_Add.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.button_Add.Name = "button_Add";
-            this.button_Add.Size = new System.Drawing.Size(108, 26);
+            this.button_Add.Size = new System.Drawing.Size(86, 26);
             this.button_Add.TabIndex = 7;
             this.button_Add.Text = "Add";
             this.button_Add.UseVisualStyleBackColor = false;
             this.button_Add.Click += new System.EventHandler(this.button_Add_Click);
+            // 
+            // dataGridView_Groups
+            // 
+            this.dataGridView_Groups.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView_Groups.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_Groups.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column_Group,
+            this.Column_Department,
+            this.Column_Faculty});
+            this.dataGridView_Groups.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView_Groups.Name = "dataGridView_Groups";
+            this.dataGridView_Groups.RowHeadersVisible = false;
+            this.dataGridView_Groups.RowTemplate.Height = 24;
+            this.dataGridView_Groups.Size = new System.Drawing.Size(461, 261);
+            this.dataGridView_Groups.TabIndex = 8;
+            this.dataGridView_Groups.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_Groups_CellClick);
+            // 
+            // button_Delete
+            // 
+            this.button_Delete.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button_Delete.Location = new System.Drawing.Point(593, 198);
+            this.button_Delete.Name = "button_Delete";
+            this.button_Delete.Size = new System.Drawing.Size(86, 26);
+            this.button_Delete.TabIndex = 9;
+            this.button_Delete.Text = "Delete";
+            this.button_Delete.UseVisualStyleBackColor = false;
+            this.button_Delete.Click += new System.EventHandler(this.button_Delete_Click);
+            // 
+            // Column_Group
+            // 
+            this.Column_Group.HeaderText = "Group";
+            this.Column_Group.MinimumWidth = 100;
+            this.Column_Group.Name = "Column_Group";
+            this.Column_Group.ReadOnly = true;
+            // 
+            // Column_Department
+            // 
+            this.Column_Department.HeaderText = "Department";
+            this.Column_Department.MinimumWidth = 200;
+            this.Column_Department.Name = "Column_Department";
+            this.Column_Department.ReadOnly = true;
+            this.Column_Department.Width = 200;
+            // 
+            // Column_Faculty
+            // 
+            this.Column_Faculty.HeaderText = "Faculty";
+            this.Column_Faculty.MinimumWidth = 130;
+            this.Column_Faculty.Name = "Column_Faculty";
+            this.Column_Faculty.ReadOnly = true;
+            this.Column_Faculty.Width = 130;
             // 
             // AddGroupForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(252)))), ((int)(((byte)(248)))));
-            this.ClientSize = new System.Drawing.Size(364, 263);
+            this.ClientSize = new System.Drawing.Size(714, 285);
+            this.Controls.Add(this.button_Delete);
+            this.Controls.Add(this.dataGridView_Groups);
             this.Controls.Add(this.button_Add);
             this.Controls.Add(this.button_Cancel);
             this.Controls.Add(this.textBox_Faculty);
@@ -138,6 +196,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.Name = "AddGroupForm";
             this.Text = "AddGroup";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Groups)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -153,5 +212,10 @@
         private System.Windows.Forms.TextBox textBox_Faculty;
         private System.Windows.Forms.Button button_Cancel;
         private System.Windows.Forms.Button button_Add;
+        private System.Windows.Forms.DataGridView dataGridView_Groups;
+        private System.Windows.Forms.Button button_Delete;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_Group;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_Department;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_Faculty;
     }
 }

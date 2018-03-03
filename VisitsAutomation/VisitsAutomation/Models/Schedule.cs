@@ -14,7 +14,7 @@ namespace VisitsAutomation.Models
         public Lesson Lesson { get; set; }
 
         public int Number { get; set; }
-        public DateTime Date { get; set; }
+        public DayOfWeek Day { get; set; }
 
         public int GroupId { get; set; }
         public Group Group { get; set; }

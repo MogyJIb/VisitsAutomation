@@ -53,7 +53,7 @@ namespace VisitsAutomation.Handlers
             listBox.Items.Clear();
 
             var subjects = _data.Schedules
-                .Where(t => t.GroupId == groupId && Comparator.Equal(t.Date, date))
+                .Where(t => t.GroupId == groupId && t.Day.Equals(date.DayOfWeek))
                 .OrderBy(t => t.Number)
                 .ToList();
 
@@ -62,7 +62,7 @@ namespace VisitsAutomation.Handlers
                 var lesson = _data.Lessons
                     .Where(t => t.Id == subject.LessonId)
                     .First();
-                listBox.Items.Add(subject.Number + ". " + lesson.Name);
+                listBox.Items.Add(subject.Number + ". " + lesson.Name+"    [ "+lesson.Type+" ]");
             }
 
             if (listBox.Items.Count > 0)
