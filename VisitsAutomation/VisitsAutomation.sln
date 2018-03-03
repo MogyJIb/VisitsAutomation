@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisitsAutomation", "VisitsAutomation\VisitsAutomation.csproj", "{14420B81-5B05-4412-81E8-6480121B976E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14420B81-5B05-4412-81E8-6480121B976E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14420B81-5B05-4412-81E8-6480121B976E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14420B81-5B05-4412-81E8-6480121B976E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14420B81-5B05-4412-81E8-6480121B976E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7F5E7491-DD33-431B-AE45-02FF9643C9F4}
+	EndGlobalSection
+EndGlobal

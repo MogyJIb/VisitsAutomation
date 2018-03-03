@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<ArrayOfGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Group>
+    <Id>1</Id>
+    <Name>IP-21</Name>
+    <DepartmentName>Informatics</DepartmentName>
+    <FacultyName>FAIS</FacultyName>
+  </Group>
+  <Group>
+    <Id>2</Id>
+    <Name>IP-31</Name>
+    <DepartmentName>Informatics</DepartmentName>
+    <FacultyName>FAIS</FacultyName>
+  </Group>
+  <Group>
+    <Id>3</Id>
+    <Name>EN-41</Name>
+    <DepartmentName>Theoretical Foundations of Electrical Engineering</DepartmentName>
+    <FacultyName>EF</FacultyName>
+  </Group>
+  <Group>
+    <Id>4</Id>
+    <Name>IT-12</Name>
+    <DepartmentName>Information Technology</DepartmentName>
+    <FacultyName>FAIS</FacultyName>
+  </Group>
+  <Group>
+    <Id>5</Id>
+    <Name>IT-31</Name>
+    <DepartmentName>Information Technology</DepartmentName>
+    <FacultyName>FAIS</FacultyName>
+  </Group>
+  <Group>
+    <Id>6</Id>
+    <Name>ET-11</Name>
+    <DepartmentName>Theoretical Foundations of Electrical Engineering</DepartmentName>
+    <FacultyName>EF</FacultyName>
+  </Group>
+  <Group>
+    <Id>7</Id>
+    <Name>ET-32</Name>
+    <DepartmentName>Theoretical Foundations of Electrical Engineering</DepartmentName>
+    <FacultyName>EF</FacultyName>
+  </Group>
+  <Group>
+    <Id>8</Id>
+    <Name>IS-22</Name>
+    <DepartmentName>Industrial Electronics</DepartmentName>
+    <FacultyName>FAIS</FacultyName>
+  </Group>
+  <Group>
+    <Id>9</Id>
+    <Name>E-31</Name>
+    <DepartmentName>Economics</DepartmentName>
+    <FacultyName>HEF</FacultyName>
+  </Group>
+  <Group>
+    <Id>10</Id>
+    <Name>IP-22</Name>
+    <DepartmentName>Informatics</DepartmentName>
+    <FacultyName>FAIS</FacultyName>
+  </Group>
+  <Group>
+    <Id>11</Id>
+    <Name>IP-32</Name>
+    <DepartmentName>Informatics</DepartmentName>
+    <FacultyName>FAIS</FacultyName>
+  </Group>
+  <Group>
+    <Id>12</Id>
+    <Name>IP-33</Name>
+    <DepartmentName>Informa</DepartmentName>
+    <FacultyName>DD</FacultyName>
+  </Group>
+  <Group>
+    <Id>13</Id>
+    <Name>IP</Name>
+    <DepartmentName>asd</DepartmentName>
+    <FacultyName>DDD</FacultyName>
+  </Group>
+</ArrayOfGroup>
