@@ -7,6 +7,12 @@
     <FacultyName>FAIS</FacultyName>
   </Group>
   <Group>
+    <Id>2</Id>
+    <Name>IP-31</Name>
+    <DepartmentName>Informatics</DepartmentName>
+    <FacultyName>FAIS</FacultyName>
+  </Group>
+  <Group>
     <Id>3</Id>
     <Name>EN-41</Name>
     <DepartmentName>Theoretical Foundations of Electrical Engineering</DepartmentName>
@@ -23,6 +29,12 @@
     <Name>IT-31</Name>
     <DepartmentName>Information Technology</DepartmentName>
     <FacultyName>FAIS</FacultyName>
+  </Group>
+  <Group>
+    <Id>6</Id>
+    <Name>ET-11</Name>
+    <DepartmentName>Theoretical Foundations of Electrical Engineering</DepartmentName>
+    <FacultyName>EF</FacultyName>
   </Group>
   <Group>
     <Id>7</Id>

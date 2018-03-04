@@ -28,6 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddSubjectForm));
             this.button_Delete = new System.Windows.Forms.Button();
             this.dataGridView_Lessons = new System.Windows.Forms.DataGridView();
             this.Column_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,7 +48,7 @@
             // button_Delete
             // 
             this.button_Delete.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button_Delete.Location = new System.Drawing.Point(449, 114);
+            this.button_Delete.Location = new System.Drawing.Point(454, 104);
             this.button_Delete.Name = "button_Delete";
             this.button_Delete.Size = new System.Drawing.Size(86, 26);
             this.button_Delete.TabIndex = 19;
@@ -54,16 +58,44 @@
             // 
             // dataGridView_Lessons
             // 
+            this.dataGridView_Lessons.AllowUserToDeleteRows = false;
+            this.dataGridView_Lessons.AllowUserToResizeColumns = false;
+            this.dataGridView_Lessons.AllowUserToResizeRows = false;
             this.dataGridView_Lessons.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Constantia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_Lessons.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.dataGridView_Lessons.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_Lessons.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column_Name,
             this.Column_Type});
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Constantia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_Lessons.DefaultCellStyle = dataGridViewCellStyle14;
+            this.dataGridView_Lessons.EnableHeadersVisualStyles = false;
             this.dataGridView_Lessons.Location = new System.Drawing.Point(12, 12);
             this.dataGridView_Lessons.Name = "dataGridView_Lessons";
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Constantia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.ActiveBorder;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_Lessons.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
             this.dataGridView_Lessons.RowHeadersVisible = false;
             this.dataGridView_Lessons.RowTemplate.Height = 24;
-            this.dataGridView_Lessons.Size = new System.Drawing.Size(315, 180);
+            this.dataGridView_Lessons.Size = new System.Drawing.Size(315, 171);
             this.dataGridView_Lessons.TabIndex = 18;
             this.dataGridView_Lessons.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_Lessons_CellClick);
             // 
@@ -89,7 +121,7 @@
             this.button_Add.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.button_Add.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.MenuHighlight;
             this.button_Add.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button_Add.Location = new System.Drawing.Point(356, 114);
+            this.button_Add.Location = new System.Drawing.Point(370, 104);
             this.button_Add.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.button_Add.Name = "button_Add";
             this.button_Add.Size = new System.Drawing.Size(86, 26);
@@ -101,7 +133,7 @@
             // button_Cancel
             // 
             this.button_Cancel.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button_Cancel.Location = new System.Drawing.Point(472, 166);
+            this.button_Cancel.Location = new System.Drawing.Point(472, 157);
             this.button_Cancel.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.button_Cancel.Name = "button_Cancel";
             this.button_Cancel.Size = new System.Drawing.Size(86, 26);
@@ -112,7 +144,7 @@
             // 
             // textBox_Name
             // 
-            this.textBox_Name.Location = new System.Drawing.Point(343, 32);
+            this.textBox_Name.Location = new System.Drawing.Point(346, 37);
             this.textBox_Name.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.textBox_Name.Name = "textBox_Name";
             this.textBox_Name.Size = new System.Drawing.Size(212, 26);
@@ -121,7 +153,7 @@
             // label_Type
             // 
             this.label_Type.AutoSize = true;
-            this.label_Type.Location = new System.Drawing.Point(343, 70);
+            this.label_Type.Location = new System.Drawing.Point(346, 75);
             this.label_Type.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Type.Name = "label_Type";
             this.label_Type.Size = new System.Drawing.Size(42, 18);
@@ -131,7 +163,7 @@
             // label_Name
             // 
             this.label_Name.AutoSize = true;
-            this.label_Name.Location = new System.Drawing.Point(343, 12);
+            this.label_Name.Location = new System.Drawing.Point(346, 17);
             this.label_Name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Name.Name = "label_Name";
             this.label_Name.Size = new System.Drawing.Size(50, 18);
@@ -145,17 +177,17 @@
             "practice",
             "lecture",
             "laboratory"});
-            this.comboBox_Type.Location = new System.Drawing.Point(392, 67);
+            this.comboBox_Type.Location = new System.Drawing.Point(395, 72);
             this.comboBox_Type.Name = "comboBox_Type";
             this.comboBox_Type.Size = new System.Drawing.Size(163, 26);
             this.comboBox_Type.TabIndex = 20;
             // 
-            // AddLessonForm
+            // AddSubjectForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(252)))), ((int)(((byte)(248)))));
-            this.ClientSize = new System.Drawing.Size(571, 203);
+            this.ClientSize = new System.Drawing.Size(575, 195);
             this.Controls.Add(this.comboBox_Type);
             this.Controls.Add(this.button_Delete);
             this.Controls.Add(this.dataGridView_Lessons);
@@ -165,8 +197,12 @@
             this.Controls.Add(this.label_Type);
             this.Controls.Add(this.label_Name);
             this.Font = new System.Drawing.Font("Constantia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Name = "AddLessonForm";
-            this.Text = "AddLessonForm";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(597, 246);
+            this.MinimumSize = new System.Drawing.Size(597, 246);
+            this.Name = "AddSubjectForm";
+            this.Text = "Shedule application";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Lessons)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

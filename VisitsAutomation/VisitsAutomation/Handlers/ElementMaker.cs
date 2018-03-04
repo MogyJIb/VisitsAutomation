@@ -11,13 +11,16 @@ namespace VisitsAutomation.Handlers
 {
     public class ElementMaker
     {
+        
+
+
         public static SplitContainer CreateContainerLine(string name, string absent, Dictionary<string,ComboBox> chechBoxs)
         {
             SplitContainer container = new SplitContainer();
             container.Name = "SplitContainer_" + name;
-            container.Size = new System.Drawing.Size(300, 22);
-            container.Panel1MinSize = 170;
-            container.Margin += new Padding(20, 10, 0, 0);
+            container.Size = new System.Drawing.Size(350, 22);
+            container.Panel1MinSize = 190;
+            container.Margin += new Padding(0, 0, 0, 0);
 
             Label label = new Label();
             label.Text = name;

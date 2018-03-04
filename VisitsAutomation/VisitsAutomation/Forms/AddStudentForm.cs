@@ -211,7 +211,7 @@ namespace VisitsAutomation.Forms
         private void dataGridView_Students_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             selectedIndex = dataGridView_Students.CurrentRow.Index;
-            if (selectedIndex < _data.Schedules.Count)
+            if (selectedIndex < _data.Students.Count)
             {
                 selectedStudent = _data.Students.Where(t => t.FullName.Equals(dataGridView_Students[0, selectedIndex].Value.ToString()))
                     .First();

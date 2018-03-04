@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddGroupForm));
             this.label_Group = new System.Windows.Forms.Label();
             this.label_Department = new System.Windows.Forms.Label();
             this.label_Faculty = new System.Windows.Forms.Label();
@@ -47,7 +50,7 @@
             // label_Group
             // 
             this.label_Group.AutoSize = true;
-            this.label_Group.Location = new System.Drawing.Point(485, 23);
+            this.label_Group.Location = new System.Drawing.Point(491, 22);
             this.label_Group.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Group.Name = "label_Group";
             this.label_Group.Size = new System.Drawing.Size(54, 18);
@@ -57,7 +60,7 @@
             // label_Department
             // 
             this.label_Department.AutoSize = true;
-            this.label_Department.Location = new System.Drawing.Point(485, 81);
+            this.label_Department.Location = new System.Drawing.Point(491, 79);
             this.label_Department.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Department.Name = "label_Department";
             this.label_Department.Size = new System.Drawing.Size(90, 18);
@@ -67,7 +70,7 @@
             // label_Faculty
             // 
             this.label_Faculty.AutoSize = true;
-            this.label_Faculty.Location = new System.Drawing.Point(485, 139);
+            this.label_Faculty.Location = new System.Drawing.Point(491, 129);
             this.label_Faculty.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Faculty.Name = "label_Faculty";
             this.label_Faculty.Size = new System.Drawing.Size(58, 18);
@@ -77,7 +80,7 @@
             // 
             // textBox_Group
             // 
-            this.textBox_Group.Location = new System.Drawing.Point(485, 43);
+            this.textBox_Group.Location = new System.Drawing.Point(491, 42);
             this.textBox_Group.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.textBox_Group.Name = "textBox_Group";
             this.textBox_Group.Size = new System.Drawing.Size(212, 26);
@@ -85,7 +88,7 @@
             // 
             // textBox_Department
             // 
-            this.textBox_Department.Location = new System.Drawing.Point(485, 101);
+            this.textBox_Department.Location = new System.Drawing.Point(491, 99);
             this.textBox_Department.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.textBox_Department.Name = "textBox_Department";
             this.textBox_Department.Size = new System.Drawing.Size(212, 26);
@@ -93,16 +96,16 @@
             // 
             // textBox_Faculty
             // 
-            this.textBox_Faculty.Location = new System.Drawing.Point(485, 159);
+            this.textBox_Faculty.Location = new System.Drawing.Point(557, 129);
             this.textBox_Faculty.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.textBox_Faculty.Name = "textBox_Faculty";
-            this.textBox_Faculty.Size = new System.Drawing.Size(212, 26);
+            this.textBox_Faculty.Size = new System.Drawing.Size(146, 26);
             this.textBox_Faculty.TabIndex = 5;
             // 
             // button_Cancel
             // 
             this.button_Cancel.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button_Cancel.Location = new System.Drawing.Point(611, 247);
+            this.button_Cancel.Location = new System.Drawing.Point(617, 222);
             this.button_Cancel.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.button_Cancel.Name = "button_Cancel";
             this.button_Cancel.Size = new System.Drawing.Size(86, 26);
@@ -117,7 +120,7 @@
             this.button_Add.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
             this.button_Add.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.MenuHighlight;
             this.button_Add.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button_Add.Location = new System.Drawing.Point(500, 198);
+            this.button_Add.Location = new System.Drawing.Point(515, 160);
             this.button_Add.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.button_Add.Name = "button_Add";
             this.button_Add.Size = new System.Drawing.Size(86, 26);
@@ -128,17 +131,39 @@
             // 
             // dataGridView_Groups
             // 
+            this.dataGridView_Groups.AllowUserToDeleteRows = false;
+            this.dataGridView_Groups.AllowUserToResizeColumns = false;
+            this.dataGridView_Groups.AllowUserToResizeRows = false;
             this.dataGridView_Groups.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView_Groups.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Constantia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_Groups.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView_Groups.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_Groups.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column_Group,
             this.Column_Department,
             this.Column_Faculty});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Constantia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_Groups.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView_Groups.EnableHeadersVisualStyles = false;
             this.dataGridView_Groups.Location = new System.Drawing.Point(12, 12);
             this.dataGridView_Groups.Name = "dataGridView_Groups";
+            this.dataGridView_Groups.ReadOnly = true;
             this.dataGridView_Groups.RowHeadersVisible = false;
             this.dataGridView_Groups.RowTemplate.Height = 24;
-            this.dataGridView_Groups.Size = new System.Drawing.Size(461, 261);
+            this.dataGridView_Groups.Size = new System.Drawing.Size(461, 236);
             this.dataGridView_Groups.TabIndex = 8;
             this.dataGridView_Groups.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_Groups_CellClick);
             // 
@@ -168,7 +193,7 @@
             // button_Delete
             // 
             this.button_Delete.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button_Delete.Location = new System.Drawing.Point(593, 198);
+            this.button_Delete.Location = new System.Drawing.Point(599, 160);
             this.button_Delete.Name = "button_Delete";
             this.button_Delete.Size = new System.Drawing.Size(86, 26);
             this.button_Delete.TabIndex = 9;
@@ -181,7 +206,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(252)))), ((int)(((byte)(248)))));
-            this.ClientSize = new System.Drawing.Size(714, 285);
+            this.ClientSize = new System.Drawing.Size(726, 263);
             this.Controls.Add(this.button_Delete);
             this.Controls.Add(this.dataGridView_Groups);
             this.Controls.Add(this.button_Add);
@@ -193,9 +218,13 @@
             this.Controls.Add(this.label_Department);
             this.Controls.Add(this.label_Group);
             this.Font = new System.Drawing.Font("Constantia", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.MaximumSize = new System.Drawing.Size(748, 314);
+            this.MinimumSize = new System.Drawing.Size(748, 314);
             this.Name = "AddGroupForm";
-            this.Text = "AddGroup";
+            this.Text = "Shedule application";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Groups)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

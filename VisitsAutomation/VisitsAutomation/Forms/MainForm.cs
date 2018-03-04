@@ -193,5 +193,7 @@ namespace VisitsAutomation.Forms
 
             dataGridView_StudentsAbsent.Rows.Clear();
         }
+       
+        
     }
 }

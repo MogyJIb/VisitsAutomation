@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.repotsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.absentListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,10 +49,10 @@
             this.column_Absents = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.treeView_Groups = new System.Windows.Forms.TreeView();
             this.tabPage_Schedule = new System.Windows.Forms.TabPage();
+            this.button_Save = new System.Windows.Forms.Button();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button_Save = new System.Windows.Forms.Button();
             this.flowLayoutPanel_Absents = new System.Windows.Forms.FlowLayoutPanel();
             this.comboBox_Faculty = new System.Windows.Forms.ComboBox();
             this.comboBox_Group = new System.Windows.Forms.ComboBox();
@@ -69,6 +72,8 @@
             // 
             // menuStrip
             // 
+            this.menuStrip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(252)))), ((int)(((byte)(248)))));
+            this.menuStrip.Font = new System.Drawing.Font("Constantia", 9F);
             this.menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.repotsToolStripMenuItem,
@@ -76,7 +81,8 @@
             this.helpToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(822, 28);
+            this.menuStrip.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
+            this.menuStrip.Size = new System.Drawing.Size(618, 26);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "menu";
             // 
@@ -86,19 +92,19 @@
             this.absentListToolStripMenuItem,
             this.scheduleToolStripMenuItem});
             this.repotsToolStripMenuItem.Name = "repotsToolStripMenuItem";
-            this.repotsToolStripMenuItem.Size = new System.Drawing.Size(72, 24);
+            this.repotsToolStripMenuItem.Size = new System.Drawing.Size(69, 22);
             this.repotsToolStripMenuItem.Text = "Reports";
             // 
             // absentListToolStripMenuItem
             // 
             this.absentListToolStripMenuItem.Name = "absentListToolStripMenuItem";
-            this.absentListToolStripMenuItem.Size = new System.Drawing.Size(153, 26);
+            this.absentListToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.absentListToolStripMenuItem.Text = "Absent list";
             // 
             // scheduleToolStripMenuItem
             // 
             this.scheduleToolStripMenuItem.Name = "scheduleToolStripMenuItem";
-            this.scheduleToolStripMenuItem.Size = new System.Drawing.Size(153, 26);
+            this.scheduleToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.scheduleToolStripMenuItem.Text = "Schedule";
             // 
             // editToolStripMenuItem
@@ -109,7 +115,7 @@
             this.subjectToolStripMenuItem,
             this.lessonToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(47, 24);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(47, 22);
             this.editToolStripMenuItem.Text = "Edit";
             // 
             // groupToolStripMenuItem
@@ -143,47 +149,70 @@
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(51, 22);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // tabControl_Main
             // 
             this.tabControl_Main.Controls.Add(this.tabPage_Informaion);
             this.tabControl_Main.Controls.Add(this.tabPage_Schedule);
-            this.tabControl_Main.Location = new System.Drawing.Point(12, 31);
+            this.tabControl_Main.Location = new System.Drawing.Point(0, 29);
+            this.tabControl_Main.Multiline = true;
             this.tabControl_Main.Name = "tabControl_Main";
+            this.tabControl_Main.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tabControl_Main.SelectedIndex = 0;
-            this.tabControl_Main.Size = new System.Drawing.Size(798, 394);
+            this.tabControl_Main.Size = new System.Drawing.Size(619, 276);
             this.tabControl_Main.TabIndex = 1;
             // 
             // tabPage_Informaion
             // 
+            this.tabPage_Informaion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(252)))), ((int)(((byte)(248)))));
+            this.tabPage_Informaion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tabPage_Informaion.Controls.Add(this.dataGridView_StudentsAbsent);
             this.tabPage_Informaion.Controls.Add(this.treeView_Groups);
-            this.tabPage_Informaion.Location = new System.Drawing.Point(4, 25);
+            this.tabPage_Informaion.Location = new System.Drawing.Point(4, 27);
             this.tabPage_Informaion.Name = "tabPage_Informaion";
             this.tabPage_Informaion.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_Informaion.Size = new System.Drawing.Size(790, 365);
+            this.tabPage_Informaion.Size = new System.Drawing.Size(611, 245);
             this.tabPage_Informaion.TabIndex = 0;
             this.tabPage_Informaion.Text = "Information";
-            this.tabPage_Informaion.UseVisualStyleBackColor = true;
             // 
             // dataGridView_StudentsAbsent
             // 
+            this.dataGridView_StudentsAbsent.AllowUserToAddRows = false;
+            this.dataGridView_StudentsAbsent.AllowUserToDeleteRows = false;
+            this.dataGridView_StudentsAbsent.AllowUserToResizeColumns = false;
+            this.dataGridView_StudentsAbsent.AllowUserToResizeRows = false;
             this.dataGridView_StudentsAbsent.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView_StudentsAbsent.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Constantia", 9F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_StudentsAbsent.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView_StudentsAbsent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_StudentsAbsent.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.column_FullName,
             this.column_Course,
             this.column_Absents});
-            this.dataGridView_StudentsAbsent.Enabled = false;
-            this.dataGridView_StudentsAbsent.Location = new System.Drawing.Point(208, 6);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Constantia", 9F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_StudentsAbsent.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView_StudentsAbsent.EnableHeadersVisualStyles = false;
+            this.dataGridView_StudentsAbsent.Location = new System.Drawing.Point(157, 7);
             this.dataGridView_StudentsAbsent.Name = "dataGridView_StudentsAbsent";
             this.dataGridView_StudentsAbsent.ReadOnly = true;
             this.dataGridView_StudentsAbsent.RowHeadersVisible = false;
             this.dataGridView_StudentsAbsent.RowTemplate.Height = 24;
-            this.dataGridView_StudentsAbsent.Size = new System.Drawing.Size(576, 353);
+            this.dataGridView_StudentsAbsent.Size = new System.Drawing.Size(445, 228);
             this.dataGridView_StudentsAbsent.TabIndex = 2;
             // 
             // column_FullName
@@ -209,45 +238,66 @@
             // 
             // treeView_Groups
             // 
-            this.treeView_Groups.Location = new System.Drawing.Point(6, 6);
+            this.treeView_Groups.Location = new System.Drawing.Point(7, 7);
             this.treeView_Groups.Name = "treeView_Groups";
-            this.treeView_Groups.Size = new System.Drawing.Size(196, 353);
+            this.treeView_Groups.Size = new System.Drawing.Size(144, 228);
             this.treeView_Groups.TabIndex = 0;
             this.treeView_Groups.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView_Groups_AfterSelect);
             // 
             // tabPage_Schedule
             // 
-            this.tabPage_Schedule.Controls.Add(this.splitContainer1);
+            this.tabPage_Schedule.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(252)))), ((int)(((byte)(248)))));
+            this.tabPage_Schedule.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tabPage_Schedule.Controls.Add(this.button_Save);
+            this.tabPage_Schedule.Controls.Add(this.splitContainer1);
             this.tabPage_Schedule.Controls.Add(this.flowLayoutPanel_Absents);
             this.tabPage_Schedule.Controls.Add(this.comboBox_Faculty);
             this.tabPage_Schedule.Controls.Add(this.comboBox_Group);
             this.tabPage_Schedule.Controls.Add(this.comboBox_Department);
             this.tabPage_Schedule.Controls.Add(this.dateTimePicker_ScheduleDate);
             this.tabPage_Schedule.Controls.Add(this.listBox_Subjects);
-            this.tabPage_Schedule.Location = new System.Drawing.Point(4, 25);
+            this.tabPage_Schedule.Location = new System.Drawing.Point(4, 27);
             this.tabPage_Schedule.Name = "tabPage_Schedule";
             this.tabPage_Schedule.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_Schedule.Size = new System.Drawing.Size(790, 365);
+            this.tabPage_Schedule.Size = new System.Drawing.Size(611, 245);
             this.tabPage_Schedule.TabIndex = 1;
             this.tabPage_Schedule.Text = "Schedule";
-            this.tabPage_Schedule.UseVisualStyleBackColor = true;
+            // 
+            // button_Save
+            // 
+            this.button_Save.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button_Save.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+            this.button_Save.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button_Save.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button_Save.Location = new System.Drawing.Point(505, 207);
+            this.button_Save.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.button_Save.Name = "button_Save";
+            this.button_Save.Size = new System.Drawing.Size(86, 26);
+            this.button_Save.TabIndex = 18;
+            this.button_Save.Text = "Save";
+            this.button_Save.UseVisualStyleBackColor = false;
+            this.button_Save.Click += new System.EventHandler(this.button_Save_Click);
             // 
             // splitContainer1
             // 
+            this.splitContainer1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.splitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.splitContainer1.Location = new System.Drawing.Point(310, 22);
+            this.splitContainer1.Location = new System.Drawing.Point(214, 7);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.splitContainer1.Panel1.Controls.Add(this.label1);
+            this.splitContainer1.Panel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.splitContainer1.Panel1MinSize = 190;
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.splitContainer1.Panel2.Controls.Add(this.label2);
-            this.splitContainer1.Size = new System.Drawing.Size(463, 35);
+            this.splitContainer1.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.splitContainer1.Size = new System.Drawing.Size(390, 21);
             this.splitContainer1.SplitterDistance = 190;
             this.splitContainer1.SplitterWidth = 1;
             this.splitContainer1.TabIndex = 6;
@@ -255,104 +305,100 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 4);
+            this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 17);
+            this.label1.Size = new System.Drawing.Size(73, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Full name";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 4);
+            this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 17);
+            this.label2.Size = new System.Drawing.Size(53, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "Absent";
-            // 
-            // button_Save
-            // 
-            this.button_Save.Location = new System.Drawing.Point(150, 320);
-            this.button_Save.Name = "button_Save";
-            this.button_Save.Size = new System.Drawing.Size(109, 29);
-            this.button_Save.TabIndex = 0;
-            this.button_Save.Text = "Save";
-            this.button_Save.UseVisualStyleBackColor = true;
-            this.button_Save.Click += new System.EventHandler(this.button_Save_Click);
             // 
             // flowLayoutPanel_Absents
             // 
             this.flowLayoutPanel_Absents.AutoScroll = true;
-            this.flowLayoutPanel_Absents.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel_Absents.BackColor = System.Drawing.Color.White;
             this.flowLayoutPanel_Absents.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.flowLayoutPanel_Absents.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel_Absents.Location = new System.Drawing.Point(310, 58);
+            this.flowLayoutPanel_Absents.Location = new System.Drawing.Point(214, 27);
             this.flowLayoutPanel_Absents.Name = "flowLayoutPanel_Absents";
-            this.flowLayoutPanel_Absents.Size = new System.Drawing.Size(463, 291);
+            this.flowLayoutPanel_Absents.Size = new System.Drawing.Size(390, 214);
             this.flowLayoutPanel_Absents.TabIndex = 5;
             this.flowLayoutPanel_Absents.WrapContents = false;
             // 
             // comboBox_Faculty
             // 
             this.comboBox_Faculty.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_Faculty.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBox_Faculty.FormattingEnabled = true;
-            this.comboBox_Faculty.Location = new System.Drawing.Point(57, 58);
+            this.comboBox_Faculty.Location = new System.Drawing.Point(17, 6);
             this.comboBox_Faculty.Name = "comboBox_Faculty";
-            this.comboBox_Faculty.Size = new System.Drawing.Size(155, 24);
+            this.comboBox_Faculty.Size = new System.Drawing.Size(98, 26);
             this.comboBox_Faculty.TabIndex = 4;
             this.comboBox_Faculty.SelectedIndexChanged += new System.EventHandler(this.comboBox_Faculty_SelectedIndexChanged);
             // 
             // comboBox_Group
             // 
             this.comboBox_Group.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_Group.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.comboBox_Group.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBox_Group.FormattingEnabled = true;
-            this.comboBox_Group.Location = new System.Drawing.Point(57, 138);
+            this.comboBox_Group.Location = new System.Drawing.Point(18, 70);
             this.comboBox_Group.Name = "comboBox_Group";
-            this.comboBox_Group.Size = new System.Drawing.Size(121, 24);
+            this.comboBox_Group.Size = new System.Drawing.Size(136, 26);
             this.comboBox_Group.TabIndex = 3;
             this.comboBox_Group.SelectedIndexChanged += new System.EventHandler(this.comboBox_Group_SelectedIndexChanged);
             // 
             // comboBox_Department
             // 
             this.comboBox_Department.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_Department.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBox_Department.FormattingEnabled = true;
-            this.comboBox_Department.Location = new System.Drawing.Point(57, 98);
+            this.comboBox_Department.Location = new System.Drawing.Point(18, 38);
             this.comboBox_Department.Name = "comboBox_Department";
-            this.comboBox_Department.Size = new System.Drawing.Size(177, 24);
+            this.comboBox_Department.Size = new System.Drawing.Size(153, 26);
             this.comboBox_Department.TabIndex = 2;
             this.comboBox_Department.SelectedIndexChanged += new System.EventHandler(this.comboBox_Department_SelectedIndexChanged);
             // 
             // dateTimePicker_ScheduleDate
             // 
-            this.dateTimePicker_ScheduleDate.Location = new System.Drawing.Point(42, 22);
+            this.dateTimePicker_ScheduleDate.Location = new System.Drawing.Point(32, 102);
             this.dateTimePicker_ScheduleDate.Name = "dateTimePicker_ScheduleDate";
-            this.dateTimePicker_ScheduleDate.Size = new System.Drawing.Size(196, 22);
+            this.dateTimePicker_ScheduleDate.Size = new System.Drawing.Size(153, 26);
             this.dateTimePicker_ScheduleDate.TabIndex = 1;
             this.dateTimePicker_ScheduleDate.ValueChanged += new System.EventHandler(this.dateTimePicker_ScheduleDate_ValueChanged);
             // 
             // listBox_Subjects
             // 
             this.listBox_Subjects.FormattingEnabled = true;
-            this.listBox_Subjects.ItemHeight = 16;
-            this.listBox_Subjects.Location = new System.Drawing.Point(21, 182);
+            this.listBox_Subjects.ItemHeight = 18;
+            this.listBox_Subjects.Location = new System.Drawing.Point(7, 150);
             this.listBox_Subjects.Name = "listBox_Subjects";
-            this.listBox_Subjects.Size = new System.Drawing.Size(251, 132);
+            this.listBox_Subjects.Size = new System.Drawing.Size(198, 94);
             this.listBox_Subjects.TabIndex = 0;
             this.listBox_Subjects.SelectedIndexChanged += new System.EventHandler(this.listBox_Subjects_SelectedIndexChanged);
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(822, 437);
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ClientSize = new System.Drawing.Size(618, 301);
             this.Controls.Add(this.tabControl_Main);
             this.Controls.Add(this.menuStrip);
+            this.Font = new System.Drawing.Font("Constantia", 9F);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip;
-            this.MaximumSize = new System.Drawing.Size(840, 484);
-            this.MinimumSize = new System.Drawing.Size(840, 484);
+            this.MaximumSize = new System.Drawing.Size(640, 352);
+            this.MinimumSize = new System.Drawing.Size(640, 352);
             this.Name = "MainForm";
-            this.Text = "MainForm";
+            this.Text = "Shedule application";
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.tabControl_Main.ResumeLayout(false);
@@ -391,7 +437,6 @@
         private System.Windows.Forms.ComboBox comboBox_Group;
         private System.Windows.Forms.ComboBox comboBox_Department;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel_Absents;
-        private System.Windows.Forms.Button button_Save;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem groupToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem studentToolStripMenuItem;
@@ -400,5 +445,6 @@
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button_Save;
     }
 }
