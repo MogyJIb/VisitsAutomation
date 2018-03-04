@@ -8,6 +8,10 @@ namespace VisitsAutomation.Models
 {
     public class Lesson
     {
+        public const string PRACTICE = "practice";
+        public const string LECTURE = "lecture";
+        public const string LABORAORY = "laboratory";
+
         public int Id { get; set; }
         public string Name { get; set; }
         public string Type { get; set; }

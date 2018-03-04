@@ -70,19 +70,4 @@
     <Name>Physical Culture</Name>
     <Type>practice</Type>
   </Lesson>
-  <Lesson>
-    <Id>15</Id>
-    <Name>asd</Name>
-    <Type>asd</Type>
-  </Lesson>
-  <Lesson>
-    <Id>16</Id>
-    <Name>asd</Name>
-    <Type>asdd</Type>
-  </Lesson>
-  <Lesson>
-    <Id>17</Id>
-    <Name>adasd</Name>
-    <Type>laboratory</Type>
-  </Lesson>
 </ArrayOfLesson>

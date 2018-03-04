@@ -20,6 +20,8 @@ namespace VisitsAutomation.Forms
         public AddGroupForm()
         {
             InitializeComponent();
+
+            dataGridView_Groups.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         public AddGroupForm(DataContext data) : this()
@@ -27,7 +29,6 @@ namespace VisitsAutomation.Forms
             this._data = data;
             LoadGroups();
 
-            dataGridView_Groups.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         private void button_Cancel_Click(object sender, EventArgs e)
@@ -46,27 +47,53 @@ namespace VisitsAutomation.Forms
             string department = textBox_Department.Text;
             string faculty = textBox_Faculty.Text;
 
-            int id = _data.Groups.Count + 1;
+            int id = 1;
+            if (_data.Groups.Count > 0)
+                id = _data.Groups.Select(t => t.Id).Max() + 1;
 
-            Group group = new Group {Id = id,
-                Name = name,
-                DepartmentName = department,
-                FacultyName = faculty};
-
-            var findGroups = _data.Groups.Where(t => t.Equals(group));
-
-            if (findGroups.Count() > 0)
+            Group group;
+            if (selectedGroup == null)
             {
-                MessageBox.Show("This group alredy exist!","warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                group = new Group
+                {
+                    Id = id,
+                    Name = name,
+                    DepartmentName = department,
+                    FacultyName = faculty
+                };
+                var findGroups = _data.Groups.Where(t => t.Name.Equals(group.Name));
+
+                if (findGroups.Count() > 0)
+                {
+                    MessageBox.Show("This group alredy exist!", "warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+
+                    _data.Groups.Add(group);
+                    _data.SaveChanges(DataContext.GROUP);
+                    MessageBox.Show("Group was added successfully.",
+                        "information",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
+                    LoadGroups();
+
+                }
             }
             else
             {
-                _data.Groups.Add(group);
+                selectedGroup.Name = name;
+                selectedGroup.DepartmentName = department;
+                selectedGroup.FacultyName = faculty;
+
                 _data.SaveChanges(DataContext.GROUP);
 
-                MessageBox.Show("Group was added successfully.", "information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Close();
-            }
+                LoadGroups();
+                MessageBox.Show("Group was updated successfully.",
+                    "information",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }      
         }
 
         private void LoadGroups()
@@ -112,7 +139,8 @@ namespace VisitsAutomation.Forms
             selectedIndex = dataGridView_Groups.CurrentRow.Index;
             if (selectedIndex  < _data.Groups.Count)
             {
-                selectedGroup = _data.Groups.OrderBy(t => t.Name).ToList()[selectedIndex];
+                selectedGroup = _data.Groups.Where(t => t.Name.Equals(dataGridView_Groups[0, selectedIndex].Value.ToString()))
+                    .First();
             }
             else selectedGroup = null;
             SetGroup();
@@ -120,25 +148,24 @@ namespace VisitsAutomation.Forms
 
         private void button_Delete_Click(object sender, EventArgs e)
         {
-            if (selectedGroup != null)
+            if (selectedGroup == null)
+                return;
+
+            _data.Students.RemoveAll(t => t.GroupId == selectedGroup.Id);
+            _data.Schedules.RemoveAll(t => t.GroupId == selectedGroup.Id);
+            _data.Groups.Remove(selectedGroup);
+            _data.SaveChanges(DataContext.GROUP);
+            dataGridView_Groups.Rows.RemoveAt(selectedIndex);
+            
+            if (selectedIndex > -1 && selectedIndex < _data.Groups.Count)
             {
-                _data.Groups.Remove(selectedGroup);
-                _data.SaveChanges(DataContext.GROUP);
-                dataGridView_Groups.Rows.RemoveAt(selectedIndex);
-                if (selectedIndex + 1 < _data.Groups.Count)
-                {
-                    selectedIndex++;
-                    selectedGroup = _data.Groups.OrderBy(t => t.Name).ToList()[selectedIndex];
-                }
-                else if (selectedIndex - 1 > -1)
-                {
-                    selectedIndex--;
-                    selectedGroup = _data.Groups.OrderBy(t => t.Name).ToList()[selectedIndex];
-                }
-                else selectedGroup = null;
-                SetGroup();
-            }
-     
+                selectedGroup = _data.Groups.Where(t => t.Name.Equals(dataGridView_Groups[0, selectedIndex].Value.ToString()))
+                    .First();
+            }          
+            else selectedGroup = null;
+            SetGroup();
+
+
         }
     }
 }

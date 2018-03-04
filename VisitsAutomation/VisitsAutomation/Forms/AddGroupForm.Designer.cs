@@ -37,10 +37,10 @@
             this.button_Cancel = new System.Windows.Forms.Button();
             this.button_Add = new System.Windows.Forms.Button();
             this.dataGridView_Groups = new System.Windows.Forms.DataGridView();
-            this.button_Delete = new System.Windows.Forms.Button();
             this.Column_Group = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_Department = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_Faculty = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button_Delete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Groups)).BeginInit();
             this.SuspendLayout();
             // 
@@ -122,7 +122,7 @@
             this.button_Add.Name = "button_Add";
             this.button_Add.Size = new System.Drawing.Size(86, 26);
             this.button_Add.TabIndex = 7;
-            this.button_Add.Text = "Add";
+            this.button_Add.Text = "Edit";
             this.button_Add.UseVisualStyleBackColor = false;
             this.button_Add.Click += new System.EventHandler(this.button_Add_Click);
             // 
@@ -141,17 +141,6 @@
             this.dataGridView_Groups.Size = new System.Drawing.Size(461, 261);
             this.dataGridView_Groups.TabIndex = 8;
             this.dataGridView_Groups.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_Groups_CellClick);
-            // 
-            // button_Delete
-            // 
-            this.button_Delete.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button_Delete.Location = new System.Drawing.Point(593, 198);
-            this.button_Delete.Name = "button_Delete";
-            this.button_Delete.Size = new System.Drawing.Size(86, 26);
-            this.button_Delete.TabIndex = 9;
-            this.button_Delete.Text = "Delete";
-            this.button_Delete.UseVisualStyleBackColor = false;
-            this.button_Delete.Click += new System.EventHandler(this.button_Delete_Click);
             // 
             // Column_Group
             // 
@@ -175,6 +164,17 @@
             this.Column_Faculty.Name = "Column_Faculty";
             this.Column_Faculty.ReadOnly = true;
             this.Column_Faculty.Width = 130;
+            // 
+            // button_Delete
+            // 
+            this.button_Delete.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button_Delete.Location = new System.Drawing.Point(593, 198);
+            this.button_Delete.Name = "button_Delete";
+            this.button_Delete.Size = new System.Drawing.Size(86, 26);
+            this.button_Delete.TabIndex = 9;
+            this.button_Delete.Text = "Delete";
+            this.button_Delete.UseVisualStyleBackColor = false;
+            this.button_Delete.Click += new System.EventHandler(this.button_Delete_Click);
             // 
             // AddGroupForm
             // 

@@ -51,9 +51,9 @@ namespace VisitsAutomation.Handlers
         public static void MakeSubjectsList(int groupId, DateTime date, ListBox listBox,DataContext _data)
         {
             listBox.Items.Clear();
-
+            
             var subjects = _data.Schedules
-                .Where(t => t.GroupId == groupId && t.Day.Equals(date.DayOfWeek))
+                .Where(t => t.GroupId == groupId && t.Day.Equals(date.DayOfWeek.ToString()))
                 .OrderBy(t => t.Number)
                 .ToList();
 
@@ -128,6 +128,8 @@ namespace VisitsAutomation.Handlers
 
             comboBox.SelectedIndex = 0;
         }
+
+
 
     }
 }

@@ -37,11 +37,6 @@
             this.studentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.subjectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lessonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.referenceBooksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.absentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.studensToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.groupsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.departmentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl_Main = new System.Windows.Forms.TabControl();
             this.tabPage_Informaion = new System.Windows.Forms.TabPage();
@@ -78,7 +73,6 @@
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.repotsToolStripMenuItem,
             this.editToolStripMenuItem,
-            this.referenceBooksToolStripMenuItem,
             this.helpToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
@@ -130,12 +124,14 @@
             this.studentToolStripMenuItem.Name = "studentToolStripMenuItem";
             this.studentToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.studentToolStripMenuItem.Text = "Student";
+            this.studentToolStripMenuItem.Click += new System.EventHandler(this.studentToolStripMenuItem_Click);
             // 
             // subjectToolStripMenuItem
             // 
             this.subjectToolStripMenuItem.Name = "subjectToolStripMenuItem";
             this.subjectToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.subjectToolStripMenuItem.Text = "Subject";
+            this.subjectToolStripMenuItem.Click += new System.EventHandler(this.subjectToolStripMenuItem_Click);
             // 
             // lessonToolStripMenuItem
             // 
@@ -143,41 +139,6 @@
             this.lessonToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.lessonToolStripMenuItem.Text = "Lesson";
             this.lessonToolStripMenuItem.Click += new System.EventHandler(this.lessonToolStripMenuItem_Click);
-            // 
-            // referenceBooksToolStripMenuItem
-            // 
-            this.referenceBooksToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.absentsToolStripMenuItem,
-            this.studensToolStripMenuItem,
-            this.groupsToolStripMenuItem,
-            this.departmentsToolStripMenuItem});
-            this.referenceBooksToolStripMenuItem.Name = "referenceBooksToolStripMenuItem";
-            this.referenceBooksToolStripMenuItem.Size = new System.Drawing.Size(131, 24);
-            this.referenceBooksToolStripMenuItem.Text = "Reference books";
-            // 
-            // absentsToolStripMenuItem
-            // 
-            this.absentsToolStripMenuItem.Name = "absentsToolStripMenuItem";
-            this.absentsToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.absentsToolStripMenuItem.Text = "Absents";
-            // 
-            // studensToolStripMenuItem
-            // 
-            this.studensToolStripMenuItem.Name = "studensToolStripMenuItem";
-            this.studensToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.studensToolStripMenuItem.Text = "Studens";
-            // 
-            // groupsToolStripMenuItem
-            // 
-            this.groupsToolStripMenuItem.Name = "groupsToolStripMenuItem";
-            this.groupsToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.groupsToolStripMenuItem.Text = "Groups";
-            // 
-            // departmentsToolStripMenuItem
-            // 
-            this.departmentsToolStripMenuItem.Name = "departmentsToolStripMenuItem";
-            this.departmentsToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.departmentsToolStripMenuItem.Text = "Departments";
             // 
             // helpToolStripMenuItem
             // 
@@ -413,14 +374,9 @@
 
         private System.Windows.Forms.MenuStrip menuStrip;
         private System.Windows.Forms.ToolStripMenuItem repotsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem referenceBooksToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem absentListToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem scheduleToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem absentsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem studensToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem groupsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem departmentsToolStripMenuItem;
         private System.Windows.Forms.TabControl tabControl_Main;
         private System.Windows.Forms.TabPage tabPage_Informaion;
         private System.Windows.Forms.TabPage tabPage_Schedule;

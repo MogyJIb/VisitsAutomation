@@ -99,9 +99,8 @@ namespace VisitsAutomation.Forms
             chechBoxs.Clear();
             
             int index = listBox_Subjects.SelectedIndex;
-
            var selectedSchedule = _data.Schedules
-                .Where(t => t.GroupId == selectedGroupId && t.Day== selectedDate.DayOfWeek)
+                .Where(t => t.GroupId == selectedGroupId && t.Day.Equals(selectedDate.DayOfWeek.ToString()))
                 .OrderBy(t => t.Number)
                 .ToList()[index];
 
@@ -154,15 +153,45 @@ namespace VisitsAutomation.Forms
         {
             AddGroupForm addGroupForm = new AddGroupForm(_data);
             addGroupForm.ShowDialog();
-            DayOfWeek day = dateTimePicker_ScheduleDate.Value.DayOfWeek;
             
             ElementMaker.MakeGroupsTreeView(_data, treeView_Groups, comboBox_Faculty);
         }
 
         private void lessonToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AddLessonForm addLessonForm = new AddLessonForm(_data);
-            addLessonForm.ShowDialog();
+            AddScheduleForm addScheduleForm = new AddScheduleForm(_data);
+            addScheduleForm.ShowDialog();
+
+            flowLayoutPanel_Absents.Controls.Clear();
+            studentAbsents.Clear();
+            chechBoxs.Clear();
+            ElementMaker.MakeSubjectsList(selectedGroupId, selectedDate, listBox_Subjects, _data);
+            if (listBox_Subjects.Items.Count > 0)
+                listBox_Subjects.SelectedIndex = 0;
+        }
+
+        private void subjectToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddSubjectForm addSubjectForm = new AddSubjectForm(_data);
+            addSubjectForm.ShowDialog();
+        }
+
+        private void studentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddStudentForm addStudentForm = new AddStudentForm(_data);
+            addStudentForm.ShowDialog();
+
+            ElementMaker.MakeGroupsTreeView(_data, treeView_Groups, comboBox_Faculty); flowLayoutPanel_Absents.Controls.Clear();
+
+            flowLayoutPanel_Absents.Controls.Clear();
+            studentAbsents.Clear();
+            chechBoxs.Clear();
+
+            ElementMaker.MakeSubjectsList(selectedGroupId, selectedDate, listBox_Subjects, _data);
+            if (listBox_Subjects.Items.Count > 0)
+                listBox_Subjects.SelectedIndex = 0;
+
+            dataGridView_StudentsAbsent.Rows.Clear();
         }
     }
 }

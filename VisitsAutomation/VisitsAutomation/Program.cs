@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using VisitsAutomation.Forms;
 using VisitsAutomation.Models;
+using VisitsAutomation.Utils;
 
 namespace VisitsAutomation
 {
@@ -16,6 +17,9 @@ namespace VisitsAutomation
         [STAThread]
         static void Main()
         {
+
+            InitializationUtil.Init();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());

@@ -53,11 +53,23 @@
     <Compile Include="Forms\AddGroupForm.Designer.cs">
       <DependentUpon>AddGroupForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\AddLessonForm.cs">
+    <Compile Include="Forms\AddSubjectForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AddLessonForm.Designer.cs">
-      <DependentUpon>AddLessonForm.cs</DependentUpon>
+    <Compile Include="Forms\AddSubjectForm.Designer.cs">
+      <DependentUpon>AddSubjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddScheduleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddScheduleForm.Designer.cs">
+      <DependentUpon>AddScheduleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddStudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddStudentForm.Designer.cs">
+      <DependentUpon>AddStudentForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Handlers\ElementMaker.cs" />
     <Compile Include="Models\Schedule.cs" />
@@ -72,7 +84,7 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Absent.cs" />
-    <Compile Include="Data\DayList.cs" />
+    <Compile Include="Data\DayOfWeek.cs" />
     <Compile Include="Models\Group.cs" />
     <Compile Include="Models\Lesson.cs" />
     <Compile Include="Models\Student.cs" />
@@ -81,8 +93,14 @@
     <EmbeddedResource Include="Forms\AddGroupForm.resx">
       <DependentUpon>AddGroupForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AddLessonForm.resx">
-      <DependentUpon>AddLessonForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\AddSubjectForm.resx">
+      <DependentUpon>AddSubjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddScheduleForm.resx">
+      <DependentUpon>AddScheduleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddStudentForm.resx">
+      <DependentUpon>AddStudentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
