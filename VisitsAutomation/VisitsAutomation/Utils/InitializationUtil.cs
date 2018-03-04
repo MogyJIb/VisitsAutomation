@@ -112,85 +112,190 @@ namespace VisitsAutomation.Utils
                     new Schedule{Id = 3, GroupId = 1, Day = DayOfWeek.Monday, LessonId = 3, Number = 3},
                     new Schedule{Id = 4, GroupId = 1, Day = DayOfWeek.Monday, LessonId = 4, Number = 4},
 
-                    new Schedule{Id = 5, GroupId = 1, Day = DayOfWeek.Thursday, LessonId = 8, Number = 2},
-                    new Schedule{Id = 6, GroupId = 1, Day = DayOfWeek.Thursday, LessonId = 9, Number = 3},
-                    new Schedule{Id = 7, GroupId = 1, Day = DayOfWeek.Thursday, LessonId = 14, Number = 4},
+                    new Schedule{Id = 5, GroupId = 1, Day = DayOfWeek.Tuesday, LessonId = 8, Number = 2},
+                    new Schedule{Id = 6, GroupId = 1, Day = DayOfWeek.Tuesday, LessonId = 9, Number = 3},
+                    new Schedule{Id = 7, GroupId = 1, Day = DayOfWeek.Tuesday, LessonId = 14, Number = 4},
+
+                    new Schedule{Id = 8, GroupId = 1, Day = DayOfWeek.Wednesday, LessonId = 5, Number = 1},
+                    new Schedule{Id = 9, GroupId = 1, Day = DayOfWeek.Wednesday, LessonId = 6, Number = 2},
+                    new Schedule{Id = 10, GroupId = 1, Day = DayOfWeek.Wednesday, LessonId = 9, Number = 3},
+
+                    new Schedule{Id = 11, GroupId = 1, Day = DayOfWeek.Thursday, LessonId = 5, Number = 2},
+                    new Schedule{Id = 12, GroupId = 1, Day = DayOfWeek.Thursday, LessonId = 4, Number = 3},
+                    new Schedule{Id = 13, GroupId = 1, Day = DayOfWeek.Thursday, LessonId = 7, Number = 4},
+
+                    new Schedule{Id = 14, GroupId = 1, Day = DayOfWeek.Friday, LessonId = 1, Number = 3},
+                    new Schedule{Id = 15, GroupId = 1, Day = DayOfWeek.Friday, LessonId = 3, Number = 4},
 
 
 
-                    new Schedule{Id = 8, GroupId = 2, Day = DayOfWeek.Monday, LessonId = 5, Number = 1},
-                    new Schedule{Id = 9, GroupId = 2, Day = DayOfWeek.Monday, LessonId = 6, Number = 2},
-                    new Schedule{Id = 10, GroupId = 2, Day = DayOfWeek.Monday, LessonId = 9, Number = 3},
 
-                    new Schedule{Id = 11, GroupId = 2, Day = DayOfWeek.Thursday, LessonId = 5, Number = 2},
-                    new Schedule{Id = 12, GroupId = 2, Day = DayOfWeek.Thursday, LessonId = 4, Number = 3},
-                    new Schedule{Id = 13, GroupId = 2, Day = DayOfWeek.Thursday, LessonId = 7, Number = 4},
+                    new Schedule{Id = 16, GroupId = 2, Day = DayOfWeek.Monday, LessonId = 2, Number = 2},
+                    new Schedule{Id = 17, GroupId = 2, Day = DayOfWeek.Monday, LessonId = 11, Number = 3},
+                    new Schedule{Id = 18, GroupId = 2, Day = DayOfWeek.Monday, LessonId = 10, Number = 4},
+                    
+                    new Schedule{Id = 19, GroupId = 2, Day = DayOfWeek.Tuesday, LessonId = 13, Number = 1},
+                    new Schedule{Id = 20, GroupId = 2, Day = DayOfWeek.Tuesday, LessonId = 12, Number = 2},
 
+                    new Schedule{Id = 21, GroupId = 2, Day = DayOfWeek.Wednesday, LessonId = 13, Number = 3},
+                    new Schedule{Id = 22, GroupId = 2, Day = DayOfWeek.Wednesday, LessonId = 5, Number = 4},
+                    new Schedule{Id = 23, GroupId = 2, Day = DayOfWeek.Wednesday, LessonId = 4, Number = 2},
+                    new Schedule{Id = 24, GroupId = 2, Day = DayOfWeek.Wednesday, LessonId = 8, Number = 3},
+                    new Schedule{Id = 25, GroupId = 2, Day = DayOfWeek.Wednesday, LessonId = 11, Number = 4},
+                    
+                    new Schedule{Id = 26, GroupId = 2, Day = DayOfWeek.Thursday, LessonId = 13, Number = 4},
 
-
-                    new Schedule{Id = 14, GroupId = 3, Day = DayOfWeek.Monday, LessonId = 1, Number = 3},
-                    new Schedule{Id = 15, GroupId = 3, Day = DayOfWeek.Monday, LessonId = 3, Number = 4},
-
-                    new Schedule{Id = 16, GroupId = 3, Day = DayOfWeek.Thursday, LessonId = 2, Number = 2},
-                    new Schedule{Id = 17, GroupId = 3, Day = DayOfWeek.Thursday, LessonId = 11, Number = 3},
-                    new Schedule{Id = 18, GroupId = 3, Day = DayOfWeek.Thursday, LessonId = 10, Number = 4},
-
-
-
-                    new Schedule{Id = 19, GroupId = 4, Day = DayOfWeek.Monday, LessonId = 13, Number = 1},
-                    new Schedule{Id = 20, GroupId = 4, Day = DayOfWeek.Monday, LessonId = 12, Number = 2},
-
-                    new Schedule{Id = 21, GroupId = 4, Day = DayOfWeek.Thursday, LessonId = 13, Number = 3},
-                    new Schedule{Id = 22, GroupId = 4, Day = DayOfWeek.Thursday, LessonId = 5, Number = 4},
-                    new Schedule{Id = 23, GroupId = 4, Day = DayOfWeek.Thursday, LessonId = 4, Number = 2},
-                    new Schedule{Id = 24, GroupId = 4, Day = DayOfWeek.Thursday, LessonId = 8, Number = 3},
-                    new Schedule{Id = 25, GroupId = 4, Day = DayOfWeek.Thursday, LessonId = 11, Number = 4},
+                    new Schedule{Id = 27, GroupId = 2, Day = DayOfWeek.Friday, LessonId = 1, Number = 2},
+                    new Schedule{Id = 28, GroupId = 2, Day = DayOfWeek.Friday, LessonId = 2, Number = 3},
+                    new Schedule{Id = 29, GroupId = 2, Day = DayOfWeek.Friday, LessonId = 6, Number = 4},
 
 
 
-                    new Schedule{Id = 26, GroupId = 5, Day = DayOfWeek.Monday, LessonId = 13, Number = 4},
 
-                    new Schedule{Id = 27, GroupId = 5, Day = DayOfWeek.Thursday, LessonId = 1, Number = 2},
-                    new Schedule{Id = 28, GroupId = 5, Day = DayOfWeek.Thursday, LessonId = 2, Number = 3},
-                    new Schedule{Id = 29, GroupId = 5, Day = DayOfWeek.Thursday, LessonId = 6, Number = 4},
+                    new Schedule{Id = 30, GroupId = 3, Day = DayOfWeek.Monday, LessonId = 6, Number = 1},
+                    new Schedule{Id = 31, GroupId = 3, Day = DayOfWeek.Monday, LessonId = 6, Number = 4},
 
+                    new Schedule{Id = 32, GroupId = 3, Day = DayOfWeek.Tuesday, LessonId = 14, Number = 3},
+                    new Schedule{Id = 33, GroupId = 3, Day = DayOfWeek.Tuesday, LessonId = 2, Number = 4},
+                    
+                    new Schedule{Id = 34, GroupId = 3, Day = DayOfWeek.Wednesday, LessonId = 3, Number = 1},
+                    new Schedule{Id = 35, GroupId = 3, Day = DayOfWeek.Wednesday, LessonId = 1, Number = 2},
+                    new Schedule{Id = 36, GroupId = 3, Day = DayOfWeek.Wednesday, LessonId = 10, Number = 3},
+                    new Schedule{Id = 37, GroupId = 3, Day = DayOfWeek.Wednesday, LessonId = 12, Number = 4},
 
-
-                    new Schedule{Id = 30, GroupId = 6, Day = DayOfWeek.Monday, LessonId = 6, Number = 1},
-                    new Schedule{Id = 31, GroupId = 6, Day = DayOfWeek.Monday, LessonId = 6, Number = 4},
-
-                    new Schedule{Id = 32, GroupId = 6, Day = DayOfWeek.Thursday, LessonId = 14, Number = 3},
-                    new Schedule{Id = 33, GroupId = 6, Day = DayOfWeek.Thursday, LessonId = 2, Number = 4},
-
-
-
-                    new Schedule{Id = 34, GroupId = 7, Day = DayOfWeek.Monday, LessonId = 3, Number = 1},
-                    new Schedule{Id = 35, GroupId = 7, Day = DayOfWeek.Monday, LessonId = 1, Number = 2},
-                    new Schedule{Id = 36, GroupId = 7, Day = DayOfWeek.Monday, LessonId = 10, Number = 3},
-                    new Schedule{Id = 37, GroupId = 7, Day = DayOfWeek.Monday, LessonId = 12, Number = 4},
-
-                    new Schedule{Id = 38, GroupId = 7, Day = DayOfWeek.Thursday, LessonId = 5, Number = 3},
-                    new Schedule{Id = 39, GroupId = 7, Day = DayOfWeek.Thursday, LessonId = 3, Number = 4},
+                    new Schedule{Id = 38, GroupId = 3, Day = DayOfWeek.Thursday, LessonId = 5, Number = 3},
+                    new Schedule{Id = 39, GroupId = 3, Day = DayOfWeek.Thursday, LessonId = 3, Number = 4},
+                    
+                    new Schedule{Id = 40, GroupId = 3, Day = DayOfWeek.Friday, LessonId = 5, Number = 1},
+                    new Schedule{Id = 41, GroupId = 3, Day = DayOfWeek.Friday, LessonId = 5, Number = 2},
+                    new Schedule{Id = 42, GroupId = 3, Day = DayOfWeek.Friday, LessonId = 10, Number = 3},
 
 
 
-                    new Schedule{Id = 40, GroupId = 8, Day = DayOfWeek.Monday, LessonId = 5, Number = 1},
-                    new Schedule{Id = 41, GroupId = 8, Day = DayOfWeek.Monday, LessonId = 5, Number = 2},
-                    new Schedule{Id = 42, GroupId = 8, Day = DayOfWeek.Monday, LessonId = 10, Number = 3},
 
-                    new Schedule{Id = 43, GroupId = 8, Day = DayOfWeek.Thursday, LessonId = 9, Number = 4},
-                    new Schedule{Id = 44, GroupId = 8, Day = DayOfWeek.Thursday, LessonId = 10, Number = 2},
-                    new Schedule{Id = 45, GroupId = 8, Day = DayOfWeek.Thursday, LessonId = 9, Number = 3},
-                    new Schedule{Id = 46, GroupId = 8, Day = DayOfWeek.Thursday, LessonId = 14, Number = 4},
+                    new Schedule{Id = 43, GroupId = 4, Day = DayOfWeek.Monday, LessonId = 9, Number = 4},
+                    new Schedule{Id = 44, GroupId = 4, Day = DayOfWeek.Monday, LessonId = 10, Number = 2},
+                    new Schedule{Id = 45, GroupId = 4, Day = DayOfWeek.Monday, LessonId = 9, Number = 3},
+                    new Schedule{Id = 46, GroupId = 4, Day = DayOfWeek.Monday, LessonId = 14, Number = 4},
+                    
+                    new Schedule{Id = 47, GroupId = 4, Day = DayOfWeek.Tuesday, LessonId = 13, Number = 1},
+                    new Schedule{Id = 48, GroupId = 4, Day = DayOfWeek.Tuesday, LessonId = 2, Number = 2},
+                    new Schedule{Id = 49, GroupId = 4, Day = DayOfWeek.Tuesday, LessonId = 4, Number = 4},
+
+                    new Schedule{Id = 50, GroupId = 4, Day = DayOfWeek.Wednesday, LessonId = 2, Number = 4},
+
+                    new Schedule{Id = 51, GroupId = 4, Day = DayOfWeek.Thursday, LessonId = 5, Number = 3},
+                    new Schedule{Id = 52, GroupId = 4, Day = DayOfWeek.Thursday, LessonId = 3, Number = 4},
+
+                    new Schedule{Id = 53, GroupId = 4, Day = DayOfWeek.Friday, LessonId = 5, Number = 1},
+                    new Schedule{Id = 54, GroupId = 4, Day = DayOfWeek.Friday, LessonId = 5, Number = 2},
+                    new Schedule{Id = 55, GroupId = 4, Day = DayOfWeek.Friday, LessonId = 10, Number = 3},
 
 
 
-                    new Schedule{Id = 47, GroupId = 9, Day = DayOfWeek.Monday, LessonId = 13, Number = 1},
-                    new Schedule{Id = 48, GroupId = 9, Day = DayOfWeek.Monday, LessonId = 2, Number = 2},
-                    new Schedule{Id = 49, GroupId = 9, Day = DayOfWeek.Monday, LessonId = 4, Number = 4},
+                    new Schedule{Id = 55, GroupId = 5, Day = DayOfWeek.Monday, LessonId = 1, Number = 1},
+                    new Schedule{Id = 56, GroupId = 5, Day = DayOfWeek.Monday, LessonId = 2, Number = 2},
+                    new Schedule{Id = 57, GroupId = 5, Day = DayOfWeek.Monday, LessonId = 3, Number = 3},
+                    new Schedule{Id = 58, GroupId = 5, Day = DayOfWeek.Monday, LessonId = 4, Number = 4},
 
-                    new Schedule{Id = 50, GroupId = 9, Day = DayOfWeek.Thursday, LessonId = 2, Number = 4}
+                    new Schedule{Id = 59, GroupId = 5, Day = DayOfWeek.Tuesday, LessonId = 8, Number = 2},
+                    new Schedule{Id = 60, GroupId = 5, Day = DayOfWeek.Tuesday, LessonId = 9, Number = 3},
+                    new Schedule{Id = 61, GroupId = 5, Day = DayOfWeek.Tuesday, LessonId = 14, Number = 4},
 
+                    new Schedule{Id = 62, GroupId = 5, Day = DayOfWeek.Wednesday, LessonId = 5, Number = 1},
+                    new Schedule{Id = 63, GroupId = 5, Day = DayOfWeek.Wednesday, LessonId = 6, Number = 2},
+                    new Schedule{Id = 64, GroupId = 5, Day = DayOfWeek.Wednesday, LessonId = 9, Number = 3},
+
+                    new Schedule{Id = 65, GroupId = 5, Day = DayOfWeek.Thursday, LessonId = 5, Number = 2},
+                    new Schedule{Id = 66, GroupId = 5, Day = DayOfWeek.Thursday, LessonId = 4, Number = 3},
+                    new Schedule{Id = 67, GroupId = 5, Day = DayOfWeek.Thursday, LessonId = 7, Number = 4},
+
+                    new Schedule{Id = 68, GroupId = 5, Day = DayOfWeek.Friday, LessonId = 1, Number = 3},
+                    new Schedule{Id = 69, GroupId = 5, Day = DayOfWeek.Friday, LessonId = 3, Number = 4},
+
+
+
+
+                    new Schedule{Id = 70, GroupId = 6, Day = DayOfWeek.Monday, LessonId = 2, Number = 2},
+                    new Schedule{Id = 71, GroupId = 6, Day = DayOfWeek.Monday, LessonId = 11, Number = 3},
+                    new Schedule{Id = 72, GroupId = 6, Day = DayOfWeek.Monday, LessonId = 10, Number = 4},
+
+                    new Schedule{Id = 73, GroupId = 6, Day = DayOfWeek.Tuesday, LessonId = 13, Number = 1},
+                    new Schedule{Id = 74, GroupId = 6, Day = DayOfWeek.Tuesday, LessonId = 12, Number = 2},
+
+                    new Schedule{Id = 75, GroupId = 6, Day = DayOfWeek.Wednesday, LessonId = 13, Number = 3},
+                    new Schedule{Id = 76, GroupId = 6, Day = DayOfWeek.Wednesday, LessonId = 5, Number = 4},
+                    new Schedule{Id = 77, GroupId = 6, Day = DayOfWeek.Wednesday, LessonId = 4, Number = 2},
+                    new Schedule{Id = 78, GroupId = 6, Day = DayOfWeek.Wednesday, LessonId = 8, Number = 3},
+                    new Schedule{Id = 79, GroupId = 6, Day = DayOfWeek.Wednesday, LessonId = 11, Number = 4},
+
+                    new Schedule{Id = 80, GroupId = 6, Day = DayOfWeek.Thursday, LessonId = 13, Number = 4},
+
+                    new Schedule{Id = 81, GroupId = 6, Day = DayOfWeek.Friday, LessonId = 1, Number = 2},
+                    new Schedule{Id = 82, GroupId = 6, Day = DayOfWeek.Friday, LessonId = 2, Number = 3},
+                    new Schedule{Id = 83, GroupId = 6, Day = DayOfWeek.Friday, LessonId = 6, Number = 4},
+
+
+
+
+                    new Schedule{Id = 84, GroupId = 7, Day = DayOfWeek.Monday, LessonId = 6, Number = 1},
+                    new Schedule{Id = 85, GroupId = 7, Day = DayOfWeek.Monday, LessonId = 6, Number = 4},
+
+                    new Schedule{Id = 86, GroupId = 7, Day = DayOfWeek.Tuesday, LessonId = 14, Number = 3},
+                    new Schedule{Id = 87, GroupId = 7, Day = DayOfWeek.Tuesday, LessonId = 2, Number = 4},
+
+                    new Schedule{Id = 88, GroupId = 7, Day = DayOfWeek.Wednesday, LessonId = 3, Number = 1},
+                    new Schedule{Id = 89, GroupId = 7, Day = DayOfWeek.Wednesday, LessonId = 1, Number = 2},
+                    new Schedule{Id = 90, GroupId = 7, Day = DayOfWeek.Wednesday, LessonId = 10, Number = 3},
+                    new Schedule{Id = 91, GroupId = 7, Day = DayOfWeek.Wednesday, LessonId = 12, Number = 4},
+
+                    new Schedule{Id = 92, GroupId = 7, Day = DayOfWeek.Thursday, LessonId = 5, Number = 3},
+                    new Schedule{Id = 93, GroupId = 7, Day = DayOfWeek.Thursday, LessonId = 3, Number = 4},
+
+                    new Schedule{Id = 94, GroupId = 7, Day = DayOfWeek.Friday, LessonId = 5, Number = 1},
+                    new Schedule{Id = 95, GroupId = 7, Day = DayOfWeek.Friday, LessonId = 5, Number = 2},
+                    new Schedule{Id = 96, GroupId = 7, Day = DayOfWeek.Friday, LessonId = 10, Number = 3},
+
+
+
+
+                    new Schedule{Id = 97, GroupId = 8, Day = DayOfWeek.Monday, LessonId = 9, Number = 4},
+                    new Schedule{Id = 98, GroupId = 8, Day = DayOfWeek.Monday, LessonId = 10, Number = 2},
+                    new Schedule{Id = 99, GroupId = 8, Day = DayOfWeek.Monday, LessonId = 9, Number = 3},
+                    new Schedule{Id = 100, GroupId = 8, Day = DayOfWeek.Monday, LessonId = 14, Number = 4},
+
+                    new Schedule{Id = 101, GroupId = 8, Day = DayOfWeek.Tuesday, LessonId = 13, Number = 1},
+                    new Schedule{Id = 102, GroupId = 8, Day = DayOfWeek.Tuesday, LessonId = 2, Number = 2},
+                    new Schedule{Id = 103, GroupId = 8, Day = DayOfWeek.Tuesday, LessonId = 4, Number = 4},
+
+                    new Schedule{Id = 104, GroupId = 8, Day = DayOfWeek.Wednesday, LessonId = 2, Number = 4},
+
+                    new Schedule{Id = 105, GroupId = 8, Day = DayOfWeek.Thursday, LessonId = 5, Number = 3},
+                    new Schedule{Id = 106, GroupId = 8, Day = DayOfWeek.Thursday, LessonId = 3, Number = 4},
+
+                    new Schedule{Id = 107, GroupId = 8, Day = DayOfWeek.Friday, LessonId = 5, Number = 1},
+                    new Schedule{Id = 108, GroupId = 8, Day = DayOfWeek.Friday, LessonId = 5, Number = 2},
+                    new Schedule{Id = 109, GroupId = 8, Day = DayOfWeek.Friday, LessonId = 10, Number = 3},
+
+
+                    new Schedule{Id = 110, GroupId = 9, Day = DayOfWeek.Monday, LessonId = 2, Number = 2},
+                    new Schedule{Id = 111, GroupId = 9, Day = DayOfWeek.Monday, LessonId = 11, Number = 3},
+                    new Schedule{Id = 112, GroupId = 9, Day = DayOfWeek.Monday, LessonId = 10, Number = 4},
+
+                    new Schedule{Id = 113, GroupId = 9, Day = DayOfWeek.Tuesday, LessonId = 13, Number = 1},
+                    new Schedule{Id = 114, GroupId = 9, Day = DayOfWeek.Tuesday, LessonId = 12, Number = 2},
+
+                    new Schedule{Id = 115, GroupId = 9, Day = DayOfWeek.Wednesday, LessonId = 13, Number = 3},
+                    new Schedule{Id = 116, GroupId = 9, Day = DayOfWeek.Wednesday, LessonId = 5, Number = 4},
+                    new Schedule{Id = 117, GroupId = 9, Day = DayOfWeek.Wednesday, LessonId = 4, Number = 2},
+                    new Schedule{Id = 118, GroupId = 9, Day = DayOfWeek.Wednesday, LessonId = 8, Number = 3},
+                    new Schedule{Id = 119, GroupId = 9, Day = DayOfWeek.Wednesday, LessonId = 11, Number = 4},
+
+                    new Schedule{Id = 120, GroupId = 9, Day = DayOfWeek.Thursday, LessonId = 13, Number = 4},
+
+                    new Schedule{Id = 121, GroupId = 9, Day = DayOfWeek.Friday, LessonId = 1, Number = 2},
+                    new Schedule{Id = 122, GroupId = 9, Day = DayOfWeek.Friday, LessonId = 2, Number = 3},
+                    new Schedule{Id = 123, GroupId = 9, Day = DayOfWeek.Friday, LessonId = 6, Number = 4},
                 });
 
             XmlFileWriter.Serialize(ConfigurationManager.AppSettings["absent"], fmCreate,

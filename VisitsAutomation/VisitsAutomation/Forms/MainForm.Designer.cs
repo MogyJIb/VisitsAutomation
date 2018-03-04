@@ -32,9 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.repotsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.absentListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.scheduleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.studentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -59,6 +56,8 @@
             this.comboBox_Department = new System.Windows.Forms.ComboBox();
             this.dateTimePicker_ScheduleDate = new System.Windows.Forms.DateTimePicker();
             this.listBox_Subjects = new System.Windows.Forms.ListBox();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.tabControl_Main.SuspendLayout();
             this.tabPage_Informaion.SuspendLayout();
@@ -76,36 +75,14 @@
             this.menuStrip.Font = new System.Drawing.Font("Constantia", 9F);
             this.menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.repotsToolStripMenuItem,
             this.editToolStripMenuItem,
             this.helpToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.menuStrip.Size = new System.Drawing.Size(618, 26);
+            this.menuStrip.Size = new System.Drawing.Size(618, 28);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "menu";
-            // 
-            // repotsToolStripMenuItem
-            // 
-            this.repotsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.absentListToolStripMenuItem,
-            this.scheduleToolStripMenuItem});
-            this.repotsToolStripMenuItem.Name = "repotsToolStripMenuItem";
-            this.repotsToolStripMenuItem.Size = new System.Drawing.Size(69, 22);
-            this.repotsToolStripMenuItem.Text = "Reports";
-            // 
-            // absentListToolStripMenuItem
-            // 
-            this.absentListToolStripMenuItem.Name = "absentListToolStripMenuItem";
-            this.absentListToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
-            this.absentListToolStripMenuItem.Text = "Absent list";
-            // 
-            // scheduleToolStripMenuItem
-            // 
-            this.scheduleToolStripMenuItem.Name = "scheduleToolStripMenuItem";
-            this.scheduleToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
-            this.scheduleToolStripMenuItem.Text = "Schedule";
             // 
             // editToolStripMenuItem
             // 
@@ -115,7 +92,7 @@
             this.subjectToolStripMenuItem,
             this.lessonToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(47, 22);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(47, 24);
             this.editToolStripMenuItem.Text = "Edit";
             // 
             // groupToolStripMenuItem
@@ -148,8 +125,11 @@
             // 
             // helpToolStripMenuItem
             // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem,
+            this.helpToolStripMenuItem1});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(51, 22);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // tabControl_Main
@@ -383,6 +363,18 @@
             this.listBox_Subjects.TabIndex = 0;
             this.listBox_Subjects.SelectedIndexChanged += new System.EventHandler(this.listBox_Subjects_SelectedIndexChanged);
             // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.aboutToolStripMenuItem.Text = "About";
+            // 
+            // helpToolStripMenuItem1
+            // 
+            this.helpToolStripMenuItem1.Name = "helpToolStripMenuItem1";
+            this.helpToolStripMenuItem1.Size = new System.Drawing.Size(181, 26);
+            this.helpToolStripMenuItem1.Text = "Help";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -419,10 +411,7 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip;
-        private System.Windows.Forms.ToolStripMenuItem repotsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem absentListToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem scheduleToolStripMenuItem;
         private System.Windows.Forms.TabControl tabControl_Main;
         private System.Windows.Forms.TabPage tabPage_Informaion;
         private System.Windows.Forms.TabPage tabPage_Schedule;
@@ -446,5 +435,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button_Save;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem1;
     }
 }

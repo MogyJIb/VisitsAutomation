@@ -32,322 +32,840 @@
     <Id>5</Id>
     <LessonId>8</LessonId>
     <Number>2</Number>
-    <Day>Thursday</Day>
+    <Day>Tuesday</Day>
     <GroupId>1</GroupId>
   </Schedule>
   <Schedule>
     <Id>6</Id>
     <LessonId>9</LessonId>
     <Number>3</Number>
-    <Day>Thursday</Day>
+    <Day>Tuesday</Day>
     <GroupId>1</GroupId>
   </Schedule>
   <Schedule>
     <Id>7</Id>
     <LessonId>14</LessonId>
     <Number>4</Number>
-    <Day>Thursday</Day>
+    <Day>Tuesday</Day>
     <GroupId>1</GroupId>
   </Schedule>
   <Schedule>
     <Id>8</Id>
     <LessonId>5</LessonId>
     <Number>1</Number>
-    <Day>Monday</Day>
-    <GroupId>2</GroupId>
+    <Day>Wednesday</Day>
+    <GroupId>1</GroupId>
   </Schedule>
   <Schedule>
     <Id>9</Id>
     <LessonId>6</LessonId>
     <Number>2</Number>
-    <Day>Monday</Day>
-    <GroupId>2</GroupId>
+    <Day>Wednesday</Day>
+    <GroupId>1</GroupId>
   </Schedule>
   <Schedule>
     <Id>10</Id>
     <LessonId>9</LessonId>
     <Number>3</Number>
-    <Day>Monday</Day>
-    <GroupId>2</GroupId>
+    <Day>Wednesday</Day>
+    <GroupId>1</GroupId>
   </Schedule>
   <Schedule>
     <Id>11</Id>
     <LessonId>5</LessonId>
     <Number>2</Number>
     <Day>Thursday</Day>
-    <GroupId>2</GroupId>
+    <GroupId>1</GroupId>
   </Schedule>
   <Schedule>
     <Id>12</Id>
     <LessonId>4</LessonId>
     <Number>3</Number>
     <Day>Thursday</Day>
-    <GroupId>2</GroupId>
+    <GroupId>1</GroupId>
   </Schedule>
   <Schedule>
     <Id>13</Id>
     <LessonId>7</LessonId>
     <Number>4</Number>
     <Day>Thursday</Day>
-    <GroupId>2</GroupId>
+    <GroupId>1</GroupId>
   </Schedule>
   <Schedule>
     <Id>14</Id>
     <LessonId>1</LessonId>
     <Number>3</Number>
-    <Day>Monday</Day>
-    <GroupId>3</GroupId>
+    <Day>Friday</Day>
+    <GroupId>1</GroupId>
   </Schedule>
   <Schedule>
     <Id>15</Id>
     <LessonId>3</LessonId>
     <Number>4</Number>
-    <Day>Monday</Day>
-    <GroupId>3</GroupId>
+    <Day>Friday</Day>
+    <GroupId>1</GroupId>
   </Schedule>
   <Schedule>
     <Id>16</Id>
     <LessonId>2</LessonId>
     <Number>2</Number>
-    <Day>Thursday</Day>
-    <GroupId>3</GroupId>
+    <Day>Monday</Day>
+    <GroupId>2</GroupId>
   </Schedule>
   <Schedule>
     <Id>17</Id>
     <LessonId>11</LessonId>
     <Number>3</Number>
-    <Day>Thursday</Day>
-    <GroupId>3</GroupId>
+    <Day>Monday</Day>
+    <GroupId>2</GroupId>
   </Schedule>
   <Schedule>
     <Id>18</Id>
     <LessonId>10</LessonId>
     <Number>4</Number>
-    <Day>Thursday</Day>
-    <GroupId>3</GroupId>
+    <Day>Monday</Day>
+    <GroupId>2</GroupId>
   </Schedule>
   <Schedule>
     <Id>19</Id>
     <LessonId>13</LessonId>
     <Number>1</Number>
-    <Day>Monday</Day>
-    <GroupId>4</GroupId>
+    <Day>Tuesday</Day>
+    <GroupId>2</GroupId>
   </Schedule>
   <Schedule>
     <Id>20</Id>
     <LessonId>12</LessonId>
     <Number>2</Number>
-    <Day>Monday</Day>
-    <GroupId>4</GroupId>
+    <Day>Tuesday</Day>
+    <GroupId>2</GroupId>
   </Schedule>
   <Schedule>
     <Id>21</Id>
     <LessonId>13</LessonId>
     <Number>3</Number>
-    <Day>Thursday</Day>
-    <GroupId>4</GroupId>
+    <Day>Wednesday</Day>
+    <GroupId>2</GroupId>
   </Schedule>
   <Schedule>
     <Id>22</Id>
     <LessonId>5</LessonId>
     <Number>4</Number>
-    <Day>Thursday</Day>
-    <GroupId>4</GroupId>
+    <Day>Wednesday</Day>
+    <GroupId>2</GroupId>
   </Schedule>
   <Schedule>
     <Id>23</Id>
     <LessonId>4</LessonId>
     <Number>2</Number>
-    <Day>Thursday</Day>
-    <GroupId>4</GroupId>
+    <Day>Wednesday</Day>
+    <GroupId>2</GroupId>
   </Schedule>
   <Schedule>
     <Id>24</Id>
     <LessonId>8</LessonId>
     <Number>3</Number>
-    <Day>Thursday</Day>
-    <GroupId>4</GroupId>
+    <Day>Wednesday</Day>
+    <GroupId>2</GroupId>
   </Schedule>
   <Schedule>
     <Id>25</Id>
     <LessonId>11</LessonId>
     <Number>4</Number>
-    <Day>Thursday</Day>
-    <GroupId>4</GroupId>
+    <Day>Wednesday</Day>
+    <GroupId>2</GroupId>
   </Schedule>
   <Schedule>
     <Id>26</Id>
     <LessonId>13</LessonId>
     <Number>4</Number>
-    <Day>Monday</Day>
-    <GroupId>5</GroupId>
+    <Day>Thursday</Day>
+    <GroupId>2</GroupId>
   </Schedule>
   <Schedule>
     <Id>27</Id>
     <LessonId>1</LessonId>
     <Number>2</Number>
-    <Day>Thursday</Day>
-    <GroupId>5</GroupId>
+    <Day>Friday</Day>
+    <GroupId>2</GroupId>
   </Schedule>
   <Schedule>
     <Id>28</Id>
     <LessonId>2</LessonId>
     <Number>3</Number>
-    <Day>Thursday</Day>
-    <GroupId>5</GroupId>
+    <Day>Friday</Day>
+    <GroupId>2</GroupId>
   </Schedule>
   <Schedule>
     <Id>29</Id>
     <LessonId>6</LessonId>
     <Number>4</Number>
-    <Day>Thursday</Day>
-    <GroupId>5</GroupId>
+    <Day>Friday</Day>
+    <GroupId>2</GroupId>
   </Schedule>
   <Schedule>
     <Id>30</Id>
     <LessonId>6</LessonId>
     <Number>1</Number>
     <Day>Monday</Day>
-    <GroupId>6</GroupId>
+    <GroupId>3</GroupId>
   </Schedule>
   <Schedule>
     <Id>31</Id>
     <LessonId>6</LessonId>
     <Number>4</Number>
     <Day>Monday</Day>
-    <GroupId>6</GroupId>
+    <GroupId>3</GroupId>
   </Schedule>
   <Schedule>
     <Id>32</Id>
     <LessonId>14</LessonId>
     <Number>3</Number>
-    <Day>Thursday</Day>
-    <GroupId>6</GroupId>
+    <Day>Tuesday</Day>
+    <GroupId>3</GroupId>
   </Schedule>
   <Schedule>
     <Id>33</Id>
     <LessonId>2</LessonId>
     <Number>4</Number>
-    <Day>Thursday</Day>
-    <GroupId>6</GroupId>
+    <Day>Tuesday</Day>
+    <GroupId>3</GroupId>
   </Schedule>
   <Schedule>
     <Id>34</Id>
     <LessonId>3</LessonId>
     <Number>1</Number>
-    <Day>Monday</Day>
-    <GroupId>7</GroupId>
+    <Day>Wednesday</Day>
+    <GroupId>3</GroupId>
   </Schedule>
   <Schedule>
     <Id>35</Id>
     <LessonId>1</LessonId>
     <Number>2</Number>
-    <Day>Monday</Day>
-    <GroupId>7</GroupId>
+    <Day>Wednesday</Day>
+    <GroupId>3</GroupId>
   </Schedule>
   <Schedule>
     <Id>36</Id>
     <LessonId>10</LessonId>
     <Number>3</Number>
-    <Day>Monday</Day>
-    <GroupId>7</GroupId>
+    <Day>Wednesday</Day>
+    <GroupId>3</GroupId>
   </Schedule>
   <Schedule>
     <Id>37</Id>
     <LessonId>12</LessonId>
     <Number>4</Number>
-    <Day>Monday</Day>
-    <GroupId>7</GroupId>
+    <Day>Wednesday</Day>
+    <GroupId>3</GroupId>
   </Schedule>
   <Schedule>
     <Id>38</Id>
     <LessonId>5</LessonId>
     <Number>3</Number>
     <Day>Thursday</Day>
-    <GroupId>7</GroupId>
+    <GroupId>3</GroupId>
   </Schedule>
   <Schedule>
     <Id>39</Id>
     <LessonId>3</LessonId>
     <Number>4</Number>
     <Day>Thursday</Day>
-    <GroupId>7</GroupId>
+    <GroupId>3</GroupId>
   </Schedule>
   <Schedule>
     <Id>40</Id>
     <LessonId>5</LessonId>
     <Number>1</Number>
-    <Day>Monday</Day>
-    <GroupId>8</GroupId>
+    <Day>Friday</Day>
+    <GroupId>3</GroupId>
   </Schedule>
   <Schedule>
     <Id>41</Id>
     <LessonId>5</LessonId>
     <Number>2</Number>
-    <Day>Monday</Day>
-    <GroupId>8</GroupId>
+    <Day>Friday</Day>
+    <GroupId>3</GroupId>
   </Schedule>
   <Schedule>
     <Id>42</Id>
     <LessonId>10</LessonId>
     <Number>3</Number>
-    <Day>Monday</Day>
-    <GroupId>8</GroupId>
+    <Day>Friday</Day>
+    <GroupId>3</GroupId>
   </Schedule>
   <Schedule>
     <Id>43</Id>
     <LessonId>9</LessonId>
     <Number>4</Number>
-    <Day>Thursday</Day>
-    <GroupId>8</GroupId>
+    <Day>Monday</Day>
+    <GroupId>4</GroupId>
   </Schedule>
   <Schedule>
     <Id>44</Id>
     <LessonId>10</LessonId>
     <Number>2</Number>
-    <Day>Thursday</Day>
-    <GroupId>8</GroupId>
+    <Day>Monday</Day>
+    <GroupId>4</GroupId>
   </Schedule>
   <Schedule>
     <Id>45</Id>
     <LessonId>9</LessonId>
     <Number>3</Number>
-    <Day>Thursday</Day>
-    <GroupId>8</GroupId>
+    <Day>Monday</Day>
+    <GroupId>4</GroupId>
   </Schedule>
   <Schedule>
     <Id>46</Id>
     <LessonId>14</LessonId>
     <Number>4</Number>
-    <Day>Thursday</Day>
-    <GroupId>8</GroupId>
+    <Day>Monday</Day>
+    <GroupId>4</GroupId>
   </Schedule>
   <Schedule>
     <Id>47</Id>
     <LessonId>13</LessonId>
     <Number>1</Number>
-    <Day>Monday</Day>
-    <GroupId>9</GroupId>
+    <Day>Tuesday</Day>
+    <GroupId>4</GroupId>
   </Schedule>
   <Schedule>
     <Id>48</Id>
+    <LessonId>2</LessonId>
+    <Number>2</Number>
+    <Day>Tuesday</Day>
+    <GroupId>4</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>49</Id>
+    <LessonId>4</LessonId>
+    <Number>4</Number>
+    <Day>Tuesday</Day>
+    <GroupId>4</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>50</Id>
+    <LessonId>2</LessonId>
+    <Number>4</Number>
+    <Day>Wednesday</Day>
+    <GroupId>4</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>51</Id>
+    <LessonId>5</LessonId>
+    <Number>3</Number>
+    <Day>Thursday</Day>
+    <GroupId>4</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>52</Id>
+    <LessonId>3</LessonId>
+    <Number>4</Number>
+    <Day>Thursday</Day>
+    <GroupId>4</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>53</Id>
+    <LessonId>5</LessonId>
+    <Number>1</Number>
+    <Day>Friday</Day>
+    <GroupId>4</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>54</Id>
+    <LessonId>5</LessonId>
+    <Number>2</Number>
+    <Day>Friday</Day>
+    <GroupId>4</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>55</Id>
+    <LessonId>10</LessonId>
+    <Number>3</Number>
+    <Day>Friday</Day>
+    <GroupId>4</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>55</Id>
+    <LessonId>1</LessonId>
+    <Number>1</Number>
+    <Day>Monday</Day>
+    <GroupId>5</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>56</Id>
+    <LessonId>2</LessonId>
+    <Number>2</Number>
+    <Day>Monday</Day>
+    <GroupId>5</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>57</Id>
+    <LessonId>3</LessonId>
+    <Number>3</Number>
+    <Day>Monday</Day>
+    <GroupId>5</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>58</Id>
+    <LessonId>4</LessonId>
+    <Number>4</Number>
+    <Day>Monday</Day>
+    <GroupId>5</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>59</Id>
+    <LessonId>8</LessonId>
+    <Number>2</Number>
+    <Day>Tuesday</Day>
+    <GroupId>5</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>60</Id>
+    <LessonId>9</LessonId>
+    <Number>3</Number>
+    <Day>Tuesday</Day>
+    <GroupId>5</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>61</Id>
+    <LessonId>14</LessonId>
+    <Number>4</Number>
+    <Day>Tuesday</Day>
+    <GroupId>5</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>62</Id>
+    <LessonId>5</LessonId>
+    <Number>1</Number>
+    <Day>Wednesday</Day>
+    <GroupId>5</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>63</Id>
+    <LessonId>6</LessonId>
+    <Number>2</Number>
+    <Day>Wednesday</Day>
+    <GroupId>5</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>64</Id>
+    <LessonId>9</LessonId>
+    <Number>3</Number>
+    <Day>Wednesday</Day>
+    <GroupId>5</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>65</Id>
+    <LessonId>5</LessonId>
+    <Number>2</Number>
+    <Day>Thursday</Day>
+    <GroupId>5</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>66</Id>
+    <LessonId>4</LessonId>
+    <Number>3</Number>
+    <Day>Thursday</Day>
+    <GroupId>5</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>67</Id>
+    <LessonId>7</LessonId>
+    <Number>4</Number>
+    <Day>Thursday</Day>
+    <GroupId>5</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>68</Id>
+    <LessonId>1</LessonId>
+    <Number>3</Number>
+    <Day>Friday</Day>
+    <GroupId>5</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>69</Id>
+    <LessonId>3</LessonId>
+    <Number>4</Number>
+    <Day>Friday</Day>
+    <GroupId>5</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>70</Id>
+    <LessonId>2</LessonId>
+    <Number>2</Number>
+    <Day>Monday</Day>
+    <GroupId>6</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>71</Id>
+    <LessonId>11</LessonId>
+    <Number>3</Number>
+    <Day>Monday</Day>
+    <GroupId>6</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>72</Id>
+    <LessonId>10</LessonId>
+    <Number>4</Number>
+    <Day>Monday</Day>
+    <GroupId>6</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>73</Id>
+    <LessonId>13</LessonId>
+    <Number>1</Number>
+    <Day>Tuesday</Day>
+    <GroupId>6</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>74</Id>
+    <LessonId>12</LessonId>
+    <Number>2</Number>
+    <Day>Tuesday</Day>
+    <GroupId>6</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>75</Id>
+    <LessonId>13</LessonId>
+    <Number>3</Number>
+    <Day>Wednesday</Day>
+    <GroupId>6</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>76</Id>
+    <LessonId>5</LessonId>
+    <Number>4</Number>
+    <Day>Wednesday</Day>
+    <GroupId>6</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>77</Id>
+    <LessonId>4</LessonId>
+    <Number>2</Number>
+    <Day>Wednesday</Day>
+    <GroupId>6</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>78</Id>
+    <LessonId>8</LessonId>
+    <Number>3</Number>
+    <Day>Wednesday</Day>
+    <GroupId>6</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>79</Id>
+    <LessonId>11</LessonId>
+    <Number>4</Number>
+    <Day>Wednesday</Day>
+    <GroupId>6</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>80</Id>
+    <LessonId>13</LessonId>
+    <Number>4</Number>
+    <Day>Thursday</Day>
+    <GroupId>6</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>81</Id>
+    <LessonId>1</LessonId>
+    <Number>2</Number>
+    <Day>Friday</Day>
+    <GroupId>6</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>82</Id>
+    <LessonId>2</LessonId>
+    <Number>3</Number>
+    <Day>Friday</Day>
+    <GroupId>6</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>83</Id>
+    <LessonId>6</LessonId>
+    <Number>4</Number>
+    <Day>Friday</Day>
+    <GroupId>6</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>84</Id>
+    <LessonId>6</LessonId>
+    <Number>1</Number>
+    <Day>Monday</Day>
+    <GroupId>7</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>85</Id>
+    <LessonId>6</LessonId>
+    <Number>4</Number>
+    <Day>Monday</Day>
+    <GroupId>7</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>86</Id>
+    <LessonId>14</LessonId>
+    <Number>3</Number>
+    <Day>Tuesday</Day>
+    <GroupId>7</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>87</Id>
+    <LessonId>2</LessonId>
+    <Number>4</Number>
+    <Day>Tuesday</Day>
+    <GroupId>7</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>88</Id>
+    <LessonId>3</LessonId>
+    <Number>1</Number>
+    <Day>Wednesday</Day>
+    <GroupId>7</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>89</Id>
+    <LessonId>1</LessonId>
+    <Number>2</Number>
+    <Day>Wednesday</Day>
+    <GroupId>7</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>90</Id>
+    <LessonId>10</LessonId>
+    <Number>3</Number>
+    <Day>Wednesday</Day>
+    <GroupId>7</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>91</Id>
+    <LessonId>12</LessonId>
+    <Number>4</Number>
+    <Day>Wednesday</Day>
+    <GroupId>7</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>92</Id>
+    <LessonId>5</LessonId>
+    <Number>3</Number>
+    <Day>Thursday</Day>
+    <GroupId>7</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>93</Id>
+    <LessonId>3</LessonId>
+    <Number>4</Number>
+    <Day>Thursday</Day>
+    <GroupId>7</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>94</Id>
+    <LessonId>5</LessonId>
+    <Number>1</Number>
+    <Day>Friday</Day>
+    <GroupId>7</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>95</Id>
+    <LessonId>5</LessonId>
+    <Number>2</Number>
+    <Day>Friday</Day>
+    <GroupId>7</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>96</Id>
+    <LessonId>10</LessonId>
+    <Number>3</Number>
+    <Day>Friday</Day>
+    <GroupId>7</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>97</Id>
+    <LessonId>9</LessonId>
+    <Number>4</Number>
+    <Day>Monday</Day>
+    <GroupId>8</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>98</Id>
+    <LessonId>10</LessonId>
+    <Number>2</Number>
+    <Day>Monday</Day>
+    <GroupId>8</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>99</Id>
+    <LessonId>9</LessonId>
+    <Number>3</Number>
+    <Day>Monday</Day>
+    <GroupId>8</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>100</Id>
+    <LessonId>14</LessonId>
+    <Number>4</Number>
+    <Day>Monday</Day>
+    <GroupId>8</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>101</Id>
+    <LessonId>13</LessonId>
+    <Number>1</Number>
+    <Day>Tuesday</Day>
+    <GroupId>8</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>102</Id>
+    <LessonId>2</LessonId>
+    <Number>2</Number>
+    <Day>Tuesday</Day>
+    <GroupId>8</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>103</Id>
+    <LessonId>4</LessonId>
+    <Number>4</Number>
+    <Day>Tuesday</Day>
+    <GroupId>8</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>104</Id>
+    <LessonId>2</LessonId>
+    <Number>4</Number>
+    <Day>Wednesday</Day>
+    <GroupId>8</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>105</Id>
+    <LessonId>5</LessonId>
+    <Number>3</Number>
+    <Day>Thursday</Day>
+    <GroupId>8</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>106</Id>
+    <LessonId>3</LessonId>
+    <Number>4</Number>
+    <Day>Thursday</Day>
+    <GroupId>8</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>107</Id>
+    <LessonId>5</LessonId>
+    <Number>1</Number>
+    <Day>Friday</Day>
+    <GroupId>8</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>108</Id>
+    <LessonId>5</LessonId>
+    <Number>2</Number>
+    <Day>Friday</Day>
+    <GroupId>8</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>109</Id>
+    <LessonId>10</LessonId>
+    <Number>3</Number>
+    <Day>Friday</Day>
+    <GroupId>8</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>110</Id>
     <LessonId>2</LessonId>
     <Number>2</Number>
     <Day>Monday</Day>
     <GroupId>9</GroupId>
   </Schedule>
   <Schedule>
-    <Id>49</Id>
-    <LessonId>4</LessonId>
+    <Id>111</Id>
+    <LessonId>11</LessonId>
+    <Number>3</Number>
+    <Day>Monday</Day>
+    <GroupId>9</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>112</Id>
+    <LessonId>10</LessonId>
     <Number>4</Number>
     <Day>Monday</Day>
     <GroupId>9</GroupId>
   </Schedule>
   <Schedule>
-    <Id>50</Id>
-    <LessonId>2</LessonId>
+    <Id>113</Id>
+    <LessonId>13</LessonId>
+    <Number>1</Number>
+    <Day>Tuesday</Day>
+    <GroupId>9</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>114</Id>
+    <LessonId>12</LessonId>
+    <Number>2</Number>
+    <Day>Tuesday</Day>
+    <GroupId>9</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>115</Id>
+    <LessonId>13</LessonId>
+    <Number>3</Number>
+    <Day>Wednesday</Day>
+    <GroupId>9</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>116</Id>
+    <LessonId>5</LessonId>
+    <Number>4</Number>
+    <Day>Wednesday</Day>
+    <GroupId>9</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>117</Id>
+    <LessonId>4</LessonId>
+    <Number>2</Number>
+    <Day>Wednesday</Day>
+    <GroupId>9</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>118</Id>
+    <LessonId>8</LessonId>
+    <Number>3</Number>
+    <Day>Wednesday</Day>
+    <GroupId>9</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>119</Id>
+    <LessonId>11</LessonId>
+    <Number>4</Number>
+    <Day>Wednesday</Day>
+    <GroupId>9</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>120</Id>
+    <LessonId>13</LessonId>
     <Number>4</Number>
     <Day>Thursday</Day>
+    <GroupId>9</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>121</Id>
+    <LessonId>1</LessonId>
+    <Number>2</Number>
+    <Day>Friday</Day>
+    <GroupId>9</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>122</Id>
+    <LessonId>2</LessonId>
+    <Number>3</Number>
+    <Day>Friday</Day>
+    <GroupId>9</GroupId>
+  </Schedule>
+  <Schedule>
+    <Id>123</Id>
+    <LessonId>6</LessonId>
+    <Number>4</Number>
+    <Day>Friday</Day>
     <GroupId>9</GroupId>
   </Schedule>
 </ArrayOfSchedule>
