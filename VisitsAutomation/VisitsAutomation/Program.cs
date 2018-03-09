@@ -17,8 +17,8 @@ namespace VisitsAutomation
         [STAThread]
         static void Main()
         {
-
-            InitializationUtil.Init();
+            //Init files with the start data about students, groups and etr.
+           // InitializationUtil.Init();
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

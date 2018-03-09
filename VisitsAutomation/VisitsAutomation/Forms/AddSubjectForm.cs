@@ -20,13 +20,14 @@ namespace VisitsAutomation.Forms
         public AddSubjectForm()
         {
             InitializeComponent();
-            comboBox_Type.SelectedIndex = 0;
-            dataGridView_Lessons.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
 
         public AddSubjectForm(DataContext data) : this()
         {
+            comboBox_Type.SelectedIndex = 0;
+            dataGridView_Lessons.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+
             this._data = data;
             LoadLessons();
 

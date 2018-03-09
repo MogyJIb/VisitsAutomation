@@ -6,14 +6,11 @@ using System.Threading.Tasks;
 
 namespace VisitsAutomation.Utils
 {
-    public class Comparator
+   public  class Comparator
     {
-        public static bool Equal(DateTime one, DateTime two)
+        public static bool Equals(DateTime one, DateTime two)
         {
-            return one.Day == two.Day 
-               && one.Month == two.Month
-               && one.Year == two.Year;
-
+            return one.Year == two.Year && one.Month == two.Month && one.Day == two.Day;
         }
     }
 }

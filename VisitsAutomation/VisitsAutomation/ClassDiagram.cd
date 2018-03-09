@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="VisitsAutomation.Forms.AddGroupForm" Collapsed="true">
+    <Position X="1.25" Y="3.25" Width="1.5" />
+    <AssociationLine Name="_data" Type="VisitsAutomation.Models.DataContext" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2" Y="3.25" />
+        <Point X="2" Y="2.375" />
+        <Point X="8.75" Y="2.375" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>IAAEAAAABDAEAAAAAACAAIAmCIAQ1IAAAAIBRAUAAAA=</HashCode>
+      <FileName>Forms\AddGroupForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="selectedGroup" />
+      <Field Name="_data" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="VisitsAutomation.Forms.AddScheduleForm" Collapsed="true">
+    <Position X="3" Y="3.25" Width="1.5" />
+    <AssociationLine Name="_data" Type="VisitsAutomation.Models.DataContext" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.75" Y="3.25" />
+        <Point X="3.75" Y="2.562" />
+        <Point X="8.75" Y="2.562" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>IAAgCAABRCAAIAAAAACAIIAGQAAAlpAAEACBAAQAQQA=</HashCode>
+      <FileName>Forms\AddScheduleForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="selectedSchedule" />
+      <Field Name="_data" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="VisitsAutomation.Forms.AddStudentForm" Collapsed="true">
+    <Position X="6.5" Y="3.25" Width="1.5" />
+    <AssociationLine Name="_data" Type="VisitsAutomation.Models.DataContext" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.125" Y="3.25" />
+        <Point X="7.125" Y="3" />
+        <Point X="8.75" Y="3" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>IABAgAACDCAAAAACDASAAAIGAIEAlJgAAAABBAQAAAA=</HashCode>
+      <FileName>Forms\AddStudentForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="selectedStudent" />
+      <Field Name="_data" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="VisitsAutomation.Forms.AddSubjectForm" Collapsed="true">
+    <Position X="4.75" Y="3.25" Width="1.5" />
+    <AssociationLine Name="_data" Type="VisitsAutomation.Models.DataContext" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.5" Y="3.25" />
+        <Point X="5.5" Y="2.812" />
+        <Point X="8.75" Y="2.812" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>IAAAACABBCAAFAAAJACAAAhGAAAAhIAAAEAQAARAAAA=</HashCode>
+      <FileName>Forms\AddSubjectForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="selectedLesson" />
+      <Field Name="_data" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="VisitsAutomation.Forms.MainForm" Collapsed="true">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIKBAgAkBCCQhBGAgIHCAAEDAEAAMRAGggACDCAQBaA=</HashCode>
+      <FileName>Forms\MainForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_data" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="VisitsAutomation.Handlers.ElementMaker">
+    <Position X="8.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAEAAAAAAAIAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Handlers\ElementMaker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VisitsAutomation.Models.DayOfWeek">
+    <Position X="10.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAQAAIAACAAAABAAAAAACAAIACAIAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Data\DayOfWeek.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VisitsAutomation.Models.DataContext">
+    <Position X="8.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAIAAEAAAABAAAAAIgAAAAAEAEAAAAAABAAUAAAAAAA=</HashCode>
+      <FileName>Data\DataContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VisitsAutomation.Models.Absent">
+    <Position X="10.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAACAEAAQAAAAABAAAAAAAAAEEAAAAABAAAEAAACAAA=</HashCode>
+      <FileName>Models\Absent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VisitsAutomation.Models.Group">
+    <Position X="1.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAgAAAAASAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Models\Group.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VisitsAutomation.Models.Lesson">
+    <Position X="4.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAgAgAAAAAQAAAAAAAAAAQAAgAAAACA=</HashCode>
+      <FileName>Models\Lesson.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VisitsAutomation.Models.Schedule">
+    <Position X="3" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAEIAAAAEAAgEAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Schedule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VisitsAutomation.Models.Student">
+    <Position X="6.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACQEAEAAAAAIAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Student.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VisitsAutomation.Utils.Comparator">
+    <Position X="6.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utils\Comparator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VisitsAutomation.Utils.InitializationUtil">
+    <Position X="1.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Utils\InitializationUtil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VisitsAutomation.Utils.XmlFileReader">
+    <Position X="3" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utils\XmlFileReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VisitsAutomation.Utils.XmlFileWriter">
+    <Position X="4.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utils\XmlFileWriter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VisitsAutomation.Program">
+    <Position X="2.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

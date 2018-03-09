@@ -113,7 +113,7 @@ namespace VisitsAutomation.Forms
                 var absents = _data.Absents
                     .Where(t => t.ScheduleId == selectedSchedule.Id
                                 && t.StudentId == student.Id
-                                && Comparator.Equal(t.Date,selectedDate));
+                                && Comparator.Equals(t.Date,selectedDate));
                 if (absents.Count() > 0)
                 {
                     flowLayoutPanel_Absents.Controls.Add(ElementMaker

@@ -206,7 +206,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(252)))), ((int)(((byte)(248)))));
-            this.ClientSize = new System.Drawing.Size(726, 263);
+            this.ClientSize = new System.Drawing.Size(718, 252);
             this.Controls.Add(this.button_Delete);
             this.Controls.Add(this.dataGridView_Groups);
             this.Controls.Add(this.button_Add);
@@ -221,8 +221,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.MaximumSize = new System.Drawing.Size(748, 314);
-            this.MinimumSize = new System.Drawing.Size(748, 314);
+            this.MaximumSize = new System.Drawing.Size(740, 303);
+            this.MinimumSize = new System.Drawing.Size(740, 303);
             this.Name = "AddGroupForm";
             this.Text = "Shedule application";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Groups)).EndInit();
