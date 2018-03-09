@@ -3,162 +3,36 @@
   <Absent>
     <Id>0</Id>
     <Cause>Present</Cause>
-    <Date>2018-03-06T13:11:16.1444235+03:00</Date>
+    <Date>2018-03-09T18:12:57.2082828+03:00</Date>
     <StudentId>1</StudentId>
-    <ScheduleId>5</ScheduleId>
+    <ScheduleId>14</ScheduleId>
   </Absent>
   <Absent>
     <Id>1</Id>
     <Cause>Present</Cause>
-    <Date>2018-03-06T13:11:16.1444235+03:00</Date>
+    <Date>2018-03-09T18:12:57.2082828+03:00</Date>
     <StudentId>5</StudentId>
-    <ScheduleId>5</ScheduleId>
+    <ScheduleId>14</ScheduleId>
   </Absent>
   <Absent>
     <Id>2</Id>
     <Cause>Present</Cause>
-    <Date>2018-03-06T13:11:16.1444235+03:00</Date>
+    <Date>2018-03-09T18:12:57.2082828+03:00</Date>
     <StudentId>4</StudentId>
-    <ScheduleId>5</ScheduleId>
+    <ScheduleId>14</ScheduleId>
   </Absent>
   <Absent>
     <Id>3</Id>
     <Cause>Present</Cause>
-    <Date>2018-03-06T13:11:16.1444235+03:00</Date>
+    <Date>2018-03-09T18:12:57.2082828+03:00</Date>
     <StudentId>2</StudentId>
-    <ScheduleId>5</ScheduleId>
+    <ScheduleId>14</ScheduleId>
   </Absent>
   <Absent>
     <Id>4</Id>
     <Cause>Present</Cause>
-    <Date>2018-03-06T13:11:16.1444235+03:00</Date>
-    <StudentId>3</StudentId>
-    <ScheduleId>5</ScheduleId>
-  </Absent>
-  <Absent>
-    <Id>5</Id>
-    <Cause>Present</Cause>
-    <Date>2018-03-06T13:11:16.1444235+03:00</Date>
-    <StudentId>8</StudentId>
-    <ScheduleId>19</ScheduleId>
-  </Absent>
-  <Absent>
-    <Id>6</Id>
-    <Cause>Present</Cause>
-    <Date>2018-03-06T13:11:16.1444235+03:00</Date>
-    <StudentId>9</StudentId>
-    <ScheduleId>19</ScheduleId>
-  </Absent>
-  <Absent>
-    <Id>7</Id>
-    <Cause>Present</Cause>
-    <Date>2018-03-06T13:11:16.1444235+03:00</Date>
-    <StudentId>11</StudentId>
-    <ScheduleId>19</ScheduleId>
-  </Absent>
-  <Absent>
-    <Id>8</Id>
-    <Cause>Present</Cause>
-    <Date>2018-03-06T13:11:16.1444235+03:00</Date>
-    <StudentId>12</StudentId>
-    <ScheduleId>19</ScheduleId>
-  </Absent>
-  <Absent>
-    <Id>9</Id>
-    <Cause>Present</Cause>
-    <Date>2018-03-06T13:11:16.1444235+03:00</Date>
-    <StudentId>13</StudentId>
-    <ScheduleId>19</ScheduleId>
-  </Absent>
-  <Absent>
-    <Id>10</Id>
-    <Cause>Present</Cause>
-    <Date>2018-03-06T13:11:16.1444235+03:00</Date>
-    <StudentId>7</StudentId>
-    <ScheduleId>19</ScheduleId>
-  </Absent>
-  <Absent>
-    <Id>11</Id>
-    <Cause>Present</Cause>
-    <Date>2018-03-06T13:11:16.1444235+03:00</Date>
-    <StudentId>6</StudentId>
-    <ScheduleId>19</ScheduleId>
-  </Absent>
-  <Absent>
-    <Id>12</Id>
-    <Cause>Present</Cause>
-    <Date>2018-03-06T13:11:16.1444235+03:00</Date>
-    <StudentId>10</StudentId>
-    <ScheduleId>19</ScheduleId>
-  </Absent>
-  <Absent>
-    <Id>13</Id>
-    <Cause>Present</Cause>
-    <Date>2018-03-09T09:11:42.8029856+03:00</Date>
-    <StudentId>1</StudentId>
-    <ScheduleId>14</ScheduleId>
-  </Absent>
-  <Absent>
-    <Id>14</Id>
-    <Cause>Present</Cause>
-    <Date>2018-03-09T09:11:42.8029856+03:00</Date>
-    <StudentId>5</StudentId>
-    <ScheduleId>14</ScheduleId>
-  </Absent>
-  <Absent>
-    <Id>15</Id>
-    <Cause>Present</Cause>
-    <Date>2018-03-09T09:11:42.8029856+03:00</Date>
-    <StudentId>4</StudentId>
-    <ScheduleId>14</ScheduleId>
-  </Absent>
-  <Absent>
-    <Id>16</Id>
-    <Cause>Present</Cause>
-    <Date>2018-03-09T09:11:42.8029856+03:00</Date>
-    <StudentId>2</StudentId>
-    <ScheduleId>14</ScheduleId>
-  </Absent>
-  <Absent>
-    <Id>17</Id>
-    <Cause>Present</Cause>
-    <Date>2018-03-09T09:11:42.8029856+03:00</Date>
+    <Date>2018-03-09T18:12:57.2082828+03:00</Date>
     <StudentId>3</StudentId>
     <ScheduleId>14</ScheduleId>
-  </Absent>
-  <Absent>
-    <Id>18</Id>
-    <Cause>Present</Cause>
-    <Date>2018-03-09T13:19:40.8874582+03:00</Date>
-    <StudentId>1</StudentId>
-    <ScheduleId>15</ScheduleId>
-  </Absent>
-  <Absent>
-    <Id>19</Id>
-    <Cause>Present</Cause>
-    <Date>2018-03-09T13:19:40.8874582+03:00</Date>
-    <StudentId>5</StudentId>
-    <ScheduleId>15</ScheduleId>
-  </Absent>
-  <Absent>
-    <Id>20</Id>
-    <Cause>Present</Cause>
-    <Date>2018-03-09T13:19:40.8874582+03:00</Date>
-    <StudentId>4</StudentId>
-    <ScheduleId>15</ScheduleId>
-  </Absent>
-  <Absent>
-    <Id>21</Id>
-    <Cause>Present</Cause>
-    <Date>2018-03-09T13:19:40.8874582+03:00</Date>
-    <StudentId>2</StudentId>
-    <ScheduleId>15</ScheduleId>
-  </Absent>
-  <Absent>
-    <Id>22</Id>
-    <Cause>Present</Cause>
-    <Date>2018-03-09T13:19:40.8874582+03:00</Date>
-    <StudentId>3</StudentId>
-    <ScheduleId>15</ScheduleId>
   </Absent>
 </ArrayOfAbsent>

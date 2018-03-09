@@ -8,8 +8,43 @@ namespace VisitsAutomation.Utils
 {
     class InitializationUtil
     {
+        private static bool InitFile<T>(string fileName)
+        {
+            FileMode fmCreate = FileMode.Create;
+            FileMode fmOpen = FileMode.Open;
+
+            try
+            {
+                using (FileStream fs = new FileStream(fileName, fmOpen)) ;             
+                return false;
+            }
+            catch (System.Exception ex)
+            {
+                using (FileStream fs = new FileStream(fileName, fmCreate)) ;
+                XmlFileWriter.Serialize(fileName, fmOpen,
+                    new List<T>()
+                    {
+
+                    });
+                return true;
+            }
+        }
+
+        public static void InitFiles()
+        {
+            bool init = 
+                InitFile<Group>(ConfigurationManager.AppSettings["group"]) &&
+                InitFile<Student>(ConfigurationManager.AppSettings["student"]) &&
+                InitFile<Lesson>(ConfigurationManager.AppSettings["lesson"]) &&
+                InitFile<Schedule>(ConfigurationManager.AppSettings["schedule"]) &&
+                InitFile<Absent>(ConfigurationManager.AppSettings["absent"]);
+            if (init)
+                Init();
+        }
+
         public static void Init()
         {
+        
             FileMode fmCreate = FileMode.Create;
 
             XmlFileWriter.Serialize(ConfigurationManager.AppSettings["group"], fmCreate,
@@ -26,7 +61,6 @@ namespace VisitsAutomation.Utils
                 new Group{Id = 9, Name = "E-31", DepartmentName = "Economics", FacultyName = "HEF"}
                 });
 
-      
             XmlFileWriter.Serialize(ConfigurationManager.AppSettings["student"], fmCreate,
                 new List<Student>()
                 {
@@ -297,12 +331,7 @@ namespace VisitsAutomation.Utils
                     new Schedule{Id = 122, GroupId = 9, Day = DayOfWeek.Friday, LessonId = 2, Number = 3},
                     new Schedule{Id = 123, GroupId = 9, Day = DayOfWeek.Friday, LessonId = 6, Number = 4},
                 });
-
-            XmlFileWriter.Serialize(ConfigurationManager.AppSettings["absent"], fmCreate,
-                new List<Absent>()
-                {
-                    
-                });
+            
         }
     }
 }

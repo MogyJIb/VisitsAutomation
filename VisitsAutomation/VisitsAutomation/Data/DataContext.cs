@@ -25,7 +25,6 @@ namespace VisitsAutomation.Models
 
         public DataContext()
         {
-
             var fileName = ConfigurationManager.AppSettings[GROUP];
             Groups = (List<Group>)XmlFileReader.Deserialize(fileName, typeof(List<Group>));
 
